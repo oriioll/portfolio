@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import PortfolioHeader from '@/components/PortfolioHeader.vue';
+import HeaderLanguages from './HeaderLanguages.vue';
 </script>
 <template>
-    <main>
-        <PortfolioHeader />
-    </main>
+    <header>
+        <HeaderLanguages />
+    </header>
 </template>
 <style scoped>
 main {

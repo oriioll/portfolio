@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import Portfolio from './views/portfolio.vue'
 </script>
 
 <template>
-  <h1>Portfolio</h1>
+  <Portfolio />
 </template>
 
-<style scoped is:global>
+<style scoped>
 
 </style>
