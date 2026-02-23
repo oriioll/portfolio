@@ -17,5 +17,4 @@ main {
     align-items: center;
     gap: 5rem;
 }
-
 </style>
