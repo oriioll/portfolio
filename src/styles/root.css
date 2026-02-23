@@ -46,3 +46,17 @@ p {
     font-size: 1rem;
     line-height: 1.6;
 }
+
+/*Default Styles for body*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    font-family: var(--font-primary);
+    font-size: 16px;
+}

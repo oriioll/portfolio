@@ -2,11 +2,9 @@
 </script>
 
 <template>
+  <h1>Portfolio</h1>
 </template>
 
 <style scoped is:global>
-template {
-  width: 100%;
-  height: auto;
-}
+
 </style>
