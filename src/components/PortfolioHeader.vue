@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import HeaderLanguages from './header/HeaderLanguages.vue';
+import HeaderNav from './header/HeaderNav.vue';
 </script>
 <template>
     <header>
-        <h1>caca</h1>
+        <HeaderNav />
         <HeaderLanguages />
     </header>
 </template>
@@ -14,9 +15,15 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 5rem;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--accent-ui);
+    border-radius: 0 0 15px 15px;
+    padding: .5rem;
 }
 
 </style>
