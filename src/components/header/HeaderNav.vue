@@ -3,10 +3,10 @@
 <template>
     <nav>
         <ul>
-            <li><a href="#me">About Me</a></li>
+            <li><a href="#me">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a id="cta" href="#contact">Contact Me</a></li>
+            <li><a id="cta" href="#contact">Contact<</a></li>
         </ul>
     </nav>
 </template>
@@ -37,6 +37,29 @@ a {
 
 a:hover {
     color: var(--txt-primary);
+}
+
+/*MEDIA QUERIES - Responsive*/
+/* Small devices */
+@media (max-width: 800px) {
+  a {
+    font-size: .8rem;
+  }
+
+  ul {
+    gap: 1rem;
+  }
+}
+/* Smaller devices */
+@media (max-width: 550px) {
+  a {
+    font-size: .7rem;
+    font-weight: 600;
+  }
+
+  ul {
+    gap: .8rem;
+  }
 }
 
 </style>

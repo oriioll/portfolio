@@ -4,7 +4,7 @@
 <template>
     <aside>
         <!--SPAIN FLAG SVG-->
-        <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <svg class="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">
                 <rect x="5" y="17" width="62" height="38" fill="#f1b31c" />
                 <path fill="#d22f27" d="M23,33v7a2.0059,2.0059,0,0,1-2,2H17a2.0059,2.0059,0,0,1-2-2V33" />
@@ -38,7 +38,7 @@
         </svg>
 
         <!--UK FLAG SVG-->
-        <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <svg class="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">
                 <rect x="5" y="17" width="62" height="38" fill="#1e50a0" />
                 <g>
@@ -63,7 +63,7 @@
         </svg>
 
         <!--CATALONIA FLAG SVG-->
-        <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <svg class="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">
                 <rect x="5" y="17" width="62" height="38" fill="#f1b31c" />
                 <rect x="5" y="22" width="62" height="4" fill="#d22f27" />
@@ -90,14 +90,32 @@ aside {
     gap: 1rem;
 }
 
-#emoji {
+.emoji {
     width: 4rem;
     height: auto;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
-#emoji:hover {
+.emoji:hover {
     transform: scale(1.075);
+}
+
+/*MEDIA QUERIES - Responsive*/
+/* Small devices */
+@media (max-width: 800px) {
+  .emoji {
+    width: 2.5rem;
+  }
+}
+
+/* Smaller devices */
+@media (max-width: 550px) {
+  .emoji {
+    width: 1.6rem;
+  }
+  aside {
+    gap: .5rem;
+}
 }
 </style>

@@ -25,5 +25,11 @@ header {
     border-radius: 0 0 15px 15px;
     padding: .5rem;
 }
-
+/*MEDIA QUERIES - Responsive*/
+/* Smaller devices */
+@media (max-width: 550px) {
+  header {
+    gap: .5rem;
+  }
+}
 </style>
