@@ -1,10 +1,26 @@
 <script setup lang="ts">
+import {ref} from 'vue';
+//Importing i18n objects
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
+
+/**
+ * Function that changes the language of the app by changing the locale variable of i18n json object
+ * @param lang The code of the language you want the text to be 
+ * @author Oriol Plazas León
+ * @since 27/02/2026
+ * @see useI18n()
+ */
+function changeLang(lang: string) {
+    locale.value = lang;
+}
 
 </script>
 <template>
     <aside>
         <!--SPAIN FLAG SVG-->
-        <svg class="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <!--Classes: 'emoji' and 'active' if locale (current lang value) is 'es-ES'-->
+        <svg @click="changeLang('es-ES')" :class="['emoji', { 'active': locale === 'es-ES' }]" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">
                 <rect x="5" y="17" width="62" height="38" fill="#f1b31c" />
                 <path fill="#d22f27" d="M23,33v7a2.0059,2.0059,0,0,1-2,2H17a2.0059,2.0059,0,0,1-2-2V33" />
@@ -38,7 +54,8 @@
         </svg>
 
         <!--UK FLAG SVG-->
-        <svg class="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <!--Classes: 'emoji' and 'active' if locale (current lang value) is 'en-US'-->
+        <svg @click="changeLang('en-US')" :class="['emoji', { 'active': locale === 'en-US' }]" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">
                 <rect x="5" y="17" width="62" height="38" fill="#1e50a0" />
                 <g>
@@ -63,7 +80,8 @@
         </svg>
 
         <!--CATALONIA FLAG SVG-->
-        <svg class="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <!--Classes: 'emoji' and 'active' if locale (current lang value) is 'ca-ES'-->
+        <svg @click="changeLang('cat-ES')" :class="['emoji', { 'active': locale === 'cat-ES' }]" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">
                 <rect x="5" y="17" width="62" height="38" fill="#f1b31c" />
                 <rect x="5" y="22" width="62" height="4" fill="#d22f27" />
@@ -94,11 +112,14 @@ aside {
     width: 4rem;
     height: auto;
     cursor: pointer;
+    filter: grayscale(0.6);
     transition: all .3s ease-in-out;
 }
 
-.emoji:hover {
-    transform: scale(1.075);
+.active, .emoji:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
 }
 
 /*MEDIA QUERIES - Responsive*/

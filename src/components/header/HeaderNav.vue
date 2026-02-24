@@ -1,12 +1,15 @@
 <script setup lang="ts">
+//Importing i18n objects
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 <template>
     <nav>
         <ul>
-            <li><a href="#me">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a id="cta" href="#contact">Contact</a></li>
+            <li><a href="#me">{{ t('nav.about') }}</a></li>
+            <li><a href="#experience">{{ t('nav.experience') }}</a></li>
+            <li><a href="#projects">{{ t('nav.projects') }}</a></li>
+            <li><a id="cta" href="#contact">{{ t('nav.contact') }}</a></li>
         </ul>
     </nav>
 </template>
