@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import PortfolioHeader from '@/components/PortfolioHeader.vue';
+import PortfolioHero from '@/components/PortfolioHero.vue';
 </script>
 <template>
     <main>
         <PortfolioHeader />
+        <PortfolioHero />
     </main>
 </template>
 <style scoped>

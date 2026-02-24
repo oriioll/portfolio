@@ -15,6 +15,10 @@ const i18n: I18n = createI18n({
                 experience: 'Experiencia',
                 projects: 'Proyectos',
                 contact: 'Contacto'
+            },
+            hero: {
+                subtitle: `Desarrollador de Aplicaciones Web`,
+                description: `¡Hola!, soy Oriol, un desarrollador web bla bla bla`
             }
         },
         'en-US': {
@@ -23,6 +27,10 @@ const i18n: I18n = createI18n({
                 experience: 'Experience',
                 projects: 'Projects',
                 contact: 'Contact'
+            },
+            hero: {
+                subtitle: `Web Application Developer`,
+                description: `Hi!, I'm Oriol, a web developer bla bla bla`
             }
         },
         'cat-ES': {
@@ -31,6 +39,10 @@ const i18n: I18n = createI18n({
                 experience: 'Experiència',
                 projects: 'Projectes',
                 contact: 'Contacte'
+            },
+            hero: {
+                subtitle: `Desenvolupador d'Aplicacions Web`,
+                description: `Hola!, soc l'Oriol, un desenvolupador web bla bla bla`
             }
         }
     }
