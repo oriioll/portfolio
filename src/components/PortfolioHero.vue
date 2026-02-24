@@ -11,8 +11,7 @@ const { t } = useI18n()
             <h2>{{ t('hero.subtitle') }}</h2>
             <p>{{ t('hero.description') }}</p>
         </div>
-        <img src="../assets/oriolPf.webp" alt="Image of Oriol Plazas León" loading="lazy">´
-        
+        <img src="../assets/oriolPf.webp" alt="Image of Oriol Plazas León" loading="lazy">
     </section>
 </template>
 <style scoped>
