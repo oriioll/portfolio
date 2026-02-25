@@ -47,6 +47,21 @@ p {
     line-height: 1.6;
 }
 
+
+/* MEDIA QUERY FOR FONT-SIZING in small screens */
+@media (max-width: 800px) {
+    h1 { font-size: 2.488rem; }
+    h2 { font-size: 2.074rem; }
+    h3 { font-size: 1.728rem; }
+    h4 { font-size: 1.44rem; }
+    h5 { font-size: 1.2rem; }
+    h6 { font-size: 1rem; }
+    
+    h1, h2, h3 {
+        line-height: 1.1;
+    }
+}
+
 /*Default Styles for body*/
 * {
   margin: 0;
