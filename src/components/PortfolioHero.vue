@@ -6,7 +6,7 @@ const { t, locale } = useI18n()
 </script>
 <template>
   <section id="hero" class="hero">
-    <div class="txt">
+    <article class="txt">
       <Transition name="fade" mode="out-in">
         <h1 :key="locale">Oriol Plazas León</h1>
       </Transition>
@@ -16,7 +16,7 @@ const { t, locale } = useI18n()
       <Transition name="fade" mode="out-in">
         <p :key="locale">{{ t('hero.description') }}</p>
       </Transition>
-    </div>
+    </article>
     <img src="../assets/oriolPf.webp" alt="Image of Oriol Plazas León" loading="lazy">
   </section>
 </template>
