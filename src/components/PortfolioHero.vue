@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import HeroCtas from './hero/HeroCtas.vue';
 //Importing i18n objects
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
@@ -6,22 +7,35 @@ const { t, locale } = useI18n()
 </script>
 <template>
   <section id="hero" class="hero">
-    <article class="txt">
-      <Transition name="fade" mode="out-in">
-        <h1 :key="locale">Oriol Plazas León</h1>
-      </Transition>
-      <Transition name="fade" mode="out-in">
-        <h3 :key="locale">{{ t('hero.subtitle') }}</h3>
-      </Transition>
-      <Transition name="fade" mode="out-in">
-        <p :key="locale">{{ t('hero.description') }}</p>
-      </Transition>
-    </article>
-    <img src="../assets/oriolPf.webp" alt="Image of Oriol Plazas León" loading="lazy">
+    <div class="mainHero">
+      <article class="txt">
+        <Transition name="fade" mode="out-in">
+          <h1 :key="locale">Oriol Plazas León</h1>
+        </Transition>
+        <Transition name="fade" mode="out-in">
+          <h3 :key="locale">{{ t('hero.subtitle') }}</h3>
+        </Transition>
+        <Transition name="fade" mode="out-in">
+          <p :key="locale">{{ t('hero.description') }}</p>
+        </Transition>
+      </article>
+      <img src="../assets/oriolPf.webp" alt="Image of Oriol Plazas León" loading="lazy">
+    </div>
+    <HeroCtas></HeroCtas>
   </section>
+
 </template>
 <style scoped>
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  gap: 2rem
+}
+.mainHero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,10 +78,11 @@ const { t, locale } = useI18n()
 /*MEDIA QUERIES - Responsive*/
 /* Small devices */
 @media (max-width: 800px) {
-  .hero {
+  .mainHero {
     flex-direction: column-reverse;
     gap: 2rem;
   }
+
   .hero img {
     width: 10rem;
     height: 10rem;
@@ -75,7 +90,5 @@ const { t, locale } = useI18n()
 }
 
 /* Smaller devices */
-@media (max-width: 550px) {
-  
-}
+@media (max-width: 550px) {}
 </style>

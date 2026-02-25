@@ -18,7 +18,8 @@ const i18n: I18n = createI18n({
             },
             hero: {
                 subtitle: `Desarrollador de Aplicaciones Web`,
-                description: `¡Hola!, soy Oriol, un desarrollador web bla bla bla`
+                description: `¡Hola!, soy Oriol, un desarrollador web bla bla bla`,
+                openCv: 'Abrir CV'
             }
         },
         'en-US': {
@@ -30,7 +31,8 @@ const i18n: I18n = createI18n({
             },
             hero: {
                 subtitle: `Web Application Developer`,
-                description: `Hi!, I'm Oriol, a web developer bla bla bla`
+                description: `Hi!, I'm Oriol, a web developer bla bla bla`,
+                openCv: 'Open CV'
             }
         },
         'cat-ES': {
@@ -42,7 +44,8 @@ const i18n: I18n = createI18n({
             },
             hero: {
                 subtitle: `Desenvolupador d'Aplicacions Web`,
-                description: `Hola!, soc l'Oriol, un desenvolupador web bla bla bla`
+                description: `Hola!, soc l'Oriol, un desenvolupador web bla bla bla`,
+                openCv: 'Obrir CV'
             }
         }
     }
