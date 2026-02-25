@@ -21,8 +21,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--accent-ui);
+    /*background-color: var(--accent-ui);*/
+    background: var(--bg-primary);
     border-radius: 0 0 15px 15px;
+    border: solid 2px var(--accent-ui);
+    border-top: none;
     padding: .5rem;
 }
 /*MEDIA QUERIES - Responsive*/

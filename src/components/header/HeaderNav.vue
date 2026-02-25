@@ -1,45 +1,78 @@
 <script setup lang="ts">
 //Importing i18n objects
 import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 </script>
 <template>
-    <nav>
-        <ul>
-            <li><a href="#me">{{ t('nav.about') }}</a></li>
-            <li><a href="#experience">{{ t('nav.experience') }}</a></li>
-            <li><a href="#projects">{{ t('nav.projects') }}</a></li>
-            <li><a id="cta" href="#contact">{{ t('nav.contact') }}</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li>
+        <Transition name="fade" mode="out-in">
+          <a :key="locale" href="#me">{{ t('nav.about') }}</a>
+        </Transition>
+      </li>
+
+      <li>
+        <Transition name="fade" mode="out-in">
+          <a :key="locale" href="#experience">{{ t('nav.experience') }}</a>
+        </Transition>
+      </li>
+
+      <li>
+        <Transition name="fade" mode="out-in">
+          <a :key="locale" href="#projects">{{ t('nav.projects') }}</a>
+        </Transition>
+      </li>
+
+      <li>
+        <Transition name="fade" mode="out-in">
+          <a :key="locale" id="cta" href="#contact">{{ t('nav.contact') }}</a>
+        </Transition>
+      </li>
+    </ul>
+  </nav>
 </template>
 <style scoped>
 nav {
-    scroll-behavior: smooth;
-    height: auto;
-    width: auto;
+  scroll-behavior: smooth;
+  height: auto;
+  width: auto;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    list-style: none;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-    color: var(--bg-primary);
-    font-size: 1.25rem;
-    font-weight: bold;
-    transition: all .25s ease-out;
+  text-decoration: none;
+  color: var(--bg-primary);
+  color: var(--accent-ui);
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all .25s ease-out;
 }
 
 a:hover {
-    color: var(--txt-primary);
+  color: var(--txt-primary);
+
+}
+
+/*Animations for when changing lang */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(4px);
 }
 
 /*MEDIA QUERIES - Responsive*/
@@ -53,6 +86,7 @@ a:hover {
     gap: 1rem;
   }
 }
+
 /* Smaller devices */
 @media (max-width: 550px) {
   a {
@@ -64,5 +98,4 @@ a:hover {
     gap: .8rem;
   }
 }
-
 </style>
