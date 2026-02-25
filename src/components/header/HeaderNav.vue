@@ -79,7 +79,7 @@ a:hover {
 /* Small devices */
 @media (max-width: 800px) {
   a {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 
   ul {
@@ -90,7 +90,7 @@ a:hover {
 /* Smaller devices */
 @media (max-width: 550px) {
   a {
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: 600;
   }
 

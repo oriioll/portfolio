@@ -33,6 +33,7 @@ header {
 @media (max-width: 550px) {
   header {
     gap: .5rem;
+    padding: 1rem .5rem;
   }
 }
 </style>

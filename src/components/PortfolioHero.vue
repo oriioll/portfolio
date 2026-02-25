@@ -35,10 +35,10 @@ const { t, locale } = useI18n()
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
 
-  h3 {
-    color: var(--accent-ui);
-  }
+.txt h3 {
+  color: var(--accent-ui);
 }
 
 .hero img {
@@ -64,19 +64,18 @@ const { t, locale } = useI18n()
 /*MEDIA QUERIES - Responsive*/
 /* Small devices */
 @media (max-width: 800px) {
-  .emoji {
-    width: 2.5rem;
+  .hero {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .hero img {
+    width: 10rem;
+    height: 10rem;
   }
 }
 
 /* Smaller devices */
 @media (max-width: 550px) {
-  .emoji {
-    width: 1.6rem;
-  }
-
-  aside {
-    gap: .5rem;
-  }
+  
 }
 </style>
