@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 //Importing i18n objects
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
