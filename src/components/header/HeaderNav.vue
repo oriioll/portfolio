@@ -90,12 +90,24 @@ a:hover {
 /* Smaller devices */
 @media (max-width: 550px) {
   a {
-    font-size: .8rem;
+    font-size: 0.65rem;
     font-weight: 600;
+    white-space: nowrap;
   }
 
   ul {
-    gap: .8rem;
+    gap: 0.4rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 380px) {
+  a {
+    font-size: 0.55rem;
+  }
+
+  ul {
+    gap: 0.2rem;
   }
 }
 </style>

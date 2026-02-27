@@ -89,11 +89,14 @@ const openLink = (url: string): void => {
 <style scoped>
 .ctas {
     width: 90%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .ctas svg {
@@ -199,9 +202,61 @@ const openLink = (url: string): void => {
 /* Smaller devices */
 @media (max-width: 550px) {
     a, p {
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: 600;
     }
 
+    .ctas {
+        gap: 0.6rem;
+        width: 95%;
+    }
+
+    .ctas svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .openCv,
+    .mail {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+    }
+
+    .mail .cpSvg,
+    .mail .successSvg {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 380px) {
+    a, p {
+        font-size: .7rem;
+        font-weight: 600;
+    }
+
+    .ctas {
+        gap: 0.4rem;
+        width: 98%;
+        flex-wrap: wrap;
+    }
+
+    .ctas svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .openCv,
+    .mail {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+    }
+
+    .mail .cpSvg,
+    .mail .successSvg {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
 }
 </style>

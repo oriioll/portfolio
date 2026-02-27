@@ -159,7 +159,18 @@ aside {
     }
 
     aside {
-        gap: .5rem;
+        gap: .3rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 380px) {
+    .emoji {
+        width: 1.2rem;
+    }
+
+    aside {
+        gap: .2rem;
     }
 }
 </style>

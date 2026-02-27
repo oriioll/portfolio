@@ -32,8 +32,11 @@ const { t, locale } = useI18n()
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  max-width: 100%;
   height: auto;
-  gap: 2rem
+  gap: 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 .mainHero {
   display: flex;
@@ -41,8 +44,10 @@ const { t, locale } = useI18n()
   justify-content: space-around;
   gap: 5rem;
   width: 90%;
+  max-width: 100%;
   height: auto;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 .txt {
@@ -94,5 +99,27 @@ const { t, locale } = useI18n()
 }
 
 /* Smaller devices */
-@media (max-width: 550px) {}
+@media (max-width: 550px) {
+  .mainHero {
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .txt {
+    max-width: 100%;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 380px) {
+  .mainHero {
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+    width: 95%;
+  }
+
+  .hero {
+    gap: 1.5rem;
+  }
+}
 </style>
