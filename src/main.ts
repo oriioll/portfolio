@@ -14,7 +14,7 @@ const i18n: I18n = createI18n({
                 about: 'Sobre mi',
                 experience: 'Experiencia',
                 projects: 'Proyectos',
-                contact: 'Contacto'
+                stack: 'Tecnologías'
             },
             hero: {
                 subtitle: `Desarrollador de Aplicaciones Web`,
@@ -27,7 +27,7 @@ const i18n: I18n = createI18n({
                 about: 'About me',
                 experience: 'Experience',
                 projects: 'Projects',
-                contact: 'Contact'
+                stack: 'Tech Stack'
             },
             hero: {
                 subtitle: `Web Application Developer`,
@@ -40,7 +40,7 @@ const i18n: I18n = createI18n({
                 about: 'Sobre mi',
                 experience: 'Experiència',
                 projects: 'Projectes',
-                contact: 'Contacte'
+                stack: 'Tecnologies'
             },
             hero: {
                 subtitle: `Desenvolupador d'Aplicacions Web`,

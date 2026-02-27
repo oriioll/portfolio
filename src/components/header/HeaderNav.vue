@@ -26,7 +26,7 @@ const { t, locale } = useI18n();
 
       <li>
         <Transition name="fade" mode="out-in">
-          <a :key="locale" id="cta" href="#contact">{{ t('nav.contact') }}</a>
+          <a :key="locale" id="cta" href="#stack">{{ t('nav.stack') }}</a>
         </Transition>
       </li>
     </ul>

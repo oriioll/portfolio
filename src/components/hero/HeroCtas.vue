@@ -33,11 +33,8 @@ const openLink = (url: string) => {
         <Transition name="fade" mode="out-in">
             <a class="openCv" :key="locale" href="/CV_Oriol_Plazas.pdf" target="_blank">{{ t('hero.openCv') }}</a>
         </Transition>
-<!--
-        <Transition name="fade" mode="out-in">
-            <a :key="locale" id="cta" href="#contact">{{ t('hero.ctas.contact') }}</a>
-        </Transition>
--->
+
+        <p>oriolplazas2@gmail.com</p>
     </section>
 </template>
 <style scoped>
