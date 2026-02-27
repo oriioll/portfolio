@@ -36,7 +36,6 @@ const { t, locale } = useI18n()
   height: auto;
   gap: 2rem;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 .mainHero {
   display: flex;
