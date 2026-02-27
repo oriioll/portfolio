@@ -44,7 +44,6 @@ const openLink = (url: string): void => {
     window.open(url, '_blank');
 }
 
-
 </script>
 <template>
     <section class="ctas">
@@ -79,8 +78,8 @@ const openLink = (url: string): void => {
                     <path d="M4.012 16.737A2 2 0 0 1 3 15V5c0-1.1.9-2 2-2h10c.75 0 1.158.385 1.5 1" />
                 </g>
             </svg>
-            <svg v-else class="cpSvg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"
-                fill="none" stroke="var(--accent-ui)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg v-else class="successSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="var(--accent-ui)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M5 12l5 5l10 -10" />
             </svg>
@@ -89,6 +88,7 @@ const openLink = (url: string): void => {
 </template>
 <style scoped>
 .ctas {
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -142,6 +142,12 @@ const openLink = (url: string): void => {
     height: 1.25rem;
 }
 
+.mail .successSvg {
+    width: 1.25rem;
+    height: 1.25rem;
+    pointer-events: none;
+}
+
 /*Animations for when changing lang */
 .fade-enter-active,
 .fade-leave-active {
@@ -157,24 +163,45 @@ const openLink = (url: string): void => {
 /*MEDIA QUERIES - Responsive*/
 /* Small devices */
 @media (max-width: 800px) {
-    a {
+
+    a,
+    p {
         font-size: .9rem;
     }
 
-    ul {
+    .ctas svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .ctas {
         gap: 1rem;
     }
+
+    .openCv,
+    .mail {
+        padding: .4rem .8rem;
+    }
+
+    .mail .cpSvg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .mail .successSvg {
+        width: 1rem;
+        height: 1rem;
+        pointer-events: none;
+    }
+
 }
 
 /* Smaller devices */
 @media (max-width: 550px) {
-    a {
-        font-size: .8rem;
+    a, p {
+        font-size: .9rem;
         font-weight: 600;
     }
 
-    ul {
-        gap: .8rem;
-    }
 }
 </style>
