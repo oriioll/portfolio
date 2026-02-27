@@ -35,7 +35,7 @@ header {
 @media (max-width: 550px) {
   header {
     gap: .3rem;
-    padding: 0.5rem 0.25rem;
+    padding: 1rem 0.25rem;
     border-radius: 0 0 10px 10px;
   }
 }

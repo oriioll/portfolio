@@ -90,7 +90,7 @@ a:hover {
 /* Smaller devices */
 @media (max-width: 550px) {
   a {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 600;
     white-space: nowrap;
   }
