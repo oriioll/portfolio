@@ -38,7 +38,7 @@ const { t, locale } = useI18n()
 .mainHero {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 5rem;
   width: 90%;
   height: auto;
@@ -48,6 +48,7 @@ const { t, locale } = useI18n()
 .txt {
   display: flex;
   flex-direction: column;
+  max-width: 60%;
   gap: 1rem;
 }
 
@@ -86,6 +87,9 @@ const { t, locale } = useI18n()
   .hero img {
     width: 10rem;
     height: 10rem;
+  }
+  .txt {
+    max-width: 100%;
   }
 }
 

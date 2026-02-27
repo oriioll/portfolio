@@ -18,7 +18,7 @@ const i18n: I18n = createI18n({
             },
             hero: {
                 subtitle: `Desarrollador de Aplicaciones Web`,
-                description: `¡Hola!, soy Oriol, un desarrollador web bla bla bla`,
+                description: `¡Hola! Soy Oriol, estudiante del CFGS Desarrollo de Aplicaciones Web (DAWe) en Barcelona. Me enfoco en construir soluciones eficientes y bien estructuradas, priorizando siempre la lógica para ser capaz de adaptarme a cualquier entorno. Soy una persona analítica, autodidacta y en constante aprendizaje para seguir creciendo profesionalmente.`,
                 openCv: 'Abrir CV'
             }
         },
@@ -31,7 +31,7 @@ const i18n: I18n = createI18n({
             },
             hero: {
                 subtitle: `Web Application Developer`,
-                description: `Hi!, I'm Oriol, a web developer bla bla bla`,
+                description: `"Hi! I'm Oriol, a Higher Vocational Training student in Web Application Development (DAWe) from Barcelona. I'm focused on building efficient and well-structured solutions, always prioritizing logic to be able to adapt to any environment. I am an analytical, self-taught person, constantly learning to keep growing professionally.`,
                 openCv: 'Open CV'
             }
         },
@@ -44,7 +44,7 @@ const i18n: I18n = createI18n({
             },
             hero: {
                 subtitle: `Desenvolupador d'Aplicacions Web`,
-                description: `Hola!, soc l'Oriol, un desenvolupador web bla bla bla`,
+                description: `Hola! Sóc l'Oriol, estudiant del CFGS Desenvolupament d'Aplicacions Web (DAWe) a Barcelona. M'enfoco a construir solucions eficients i ben estructurades, prioritzant sempre la lògica per ser capaç d'adaptar-me a qualsevol entorn. Sóc una persona analítica, autodidacta i en constant aprenentatge per seguir creixent professionalment.`,
                 openCv: 'Obrir CV'
             }
         }
