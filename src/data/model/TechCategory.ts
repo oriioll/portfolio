@@ -1,0 +1,1 @@
+export type TechCategory = "FRONTEND" | "BACKEND" | "TOOLS";
