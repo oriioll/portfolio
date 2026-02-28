@@ -5,20 +5,8 @@ import HeroGoDown from './hero/HeroGoDown.vue';
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
 
-/**
- * Arrow function that scrolls down the page a certain amount of vh units with a smooth scroll behavior
- * @param vhsUnits how much vh units you want to scroll down
- * @author Oriol Plazas León
- * @since 28/02/2026
- */
-const scrollDown = (vhsUnits: number) => {
-  const VH = vhsUnits * window.innerHeight / 100;
-    window.scrollBy({
-      top: VH,
-      left: 0,
-      behavior: 'smooth'
-    });
-}
+//Import utils functions
+import { scrollDown } from '@/utils/navigation.ts';
 </script>
 <template>
   <section id="hero" class="hero">
