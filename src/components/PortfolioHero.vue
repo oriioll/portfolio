@@ -1,9 +1,24 @@
 <script setup lang="ts">
 import HeroCtas from './hero/HeroCtas.vue';
+import HeroGoDown from './hero/HeroGoDown.vue';
 //Importing i18n objects
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
 
+/**
+ * Arrow function that scrolls down the page a certain amount of vh units with a smooth scroll behavior
+ * @param vhsUnits how much vh units you want to scroll down
+ * @author Oriol Plazas León
+ * @since 28/02/2026
+ */
+const scrollDown = (vhsUnits: number) => {
+  const VH = vhsUnits * window.innerHeight / 100;
+    window.scrollBy({
+      top: VH,
+      left: 0,
+      behavior: 'smooth'
+    });
+}
 </script>
 <template>
   <section id="hero" class="hero">
@@ -22,6 +37,7 @@ const { t, locale } = useI18n()
       <img src="../assets/oriolPf.webp" alt="Image of Oriol Plazas León" loading="lazy">
     </div>
     <HeroCtas></HeroCtas>
+    <HeroGoDown @click="scrollDown(70)" class="goDownIcon"></HeroGoDown>
   </section>
 
 </template>
@@ -38,6 +54,7 @@ const { t, locale } = useI18n()
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
 .mainHero {
   display: flex;
   align-items: center;
@@ -70,6 +87,16 @@ const { t, locale } = useI18n()
   border: solid 4px var(--accent-ui);
 }
 
+.goDownIcon {
+  margin-top: 3rem;
+  transition: all .25s ease-out;
+}
+
+.goDownIcon:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+}
+
 /*Animations for when changing lang */
 .fade-enter-active,
 .fade-leave-active {
@@ -84,6 +111,10 @@ const { t, locale } = useI18n()
 /*MEDIA QUERIES - Responsive*/
 /* Small devices */
 @media (max-width: 800px) {
+  .goDownIcon {
+    display: none;
+  }
+
   .mainHero {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -93,6 +124,7 @@ const { t, locale } = useI18n()
     width: 10rem;
     height: 10rem;
   }
+
   .txt {
     max-width: 100%;
   }

@@ -17,5 +17,12 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+    main {
+        gap: 5rem;
+    }
 }
 </style>
