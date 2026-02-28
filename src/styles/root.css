@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*IMPORT FONT*/
+@font-face {
+    font-family: "Cascadia Code";
+    src: url("/fonts/cascadia-code.ttf") format("truetype");
+    font-weight: 200 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /* CSS Variables */
 :root {
@@ -7,31 +17,43 @@
     --txt-primary: #F1F1F1;
     --txt-muted: #A0A0A0;
     /* Accent Colors */
-    --accent-ui: #ec8f5c; 
+    --accent-ui: #ec8f5c;
     --accent-ui-hover: #ff9f6d;
     --accent-ui-rgba: rgba(236, 143, 92, 0.1);
     --accent-ui-low: #c97546;
     /* Font Families */
     --font-primary: 'Poppins', 'Inter', sans-serif;
+    --font-symbols: 'Montserrat', 'Onest', sans-serif;
+    --code-font: 'Cascadia Code', monospace;
 }
 
 /*Font Sizes  - https://typescale.com*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
 }
 
 h1 {
-     font-size: 3.815rem; 
+    font-size: 3.815rem;
+    font-feature-settings: "liga" 1, "calt" 1;
+
 }
-h2 { 
-    font-size: 3.052rem; 
+
+h2 {
+    font-size: 3.052rem;
 }
+
 h3 {
-    font-size: 2.441rem; 
+    font-size: 2.441rem;
 }
-h4 { 
-    font-size: 1.953rem; 
+
+h4 {
+    font-size: 1.953rem;
 }
 
 h5 {
@@ -42,6 +64,7 @@ h6 {
     font-size: 1.25rem;
 
 }
+
 p {
     font-size: 1rem;
     line-height: 1.6;
@@ -50,40 +73,79 @@ p {
 
 /* MEDIA QUERY FOR FONT-SIZING in small screens */
 @media (max-width: 800px) {
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
-    h3 { font-size: 1.5rem; }
-    h4 { font-size: 1.25rem; }
-    h5 { font-size: 1.1rem; }
-    h6 { font-size: 1rem; }
-    
-    p { font-size: 0.9rem; line-height: 1.5; }
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
 }
 
 @media (max-width: 480px) {
-    h1 { font-size: 1.75rem; } 
-    h2 { font-size: 1.5rem; }
-    h3 { font-size: 1.3rem; }
-    h4 { font-size: 1.15rem; }
-    h5 { font-size: 1.05rem; }
-    h6 { font-size: 1rem; }
-
-    p { 
-        font-size: 0.8rem; 
-        line-height: 1.4; 
+    h1 {
+        font-size: 1.75rem;
     }
 
-    h1, h2, h3 {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.15rem;
+    }
+
+    h5 {
+        font-size: 1.05rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    h1,
+    h2,
+    h3 {
         line-height: 1.1;
-        letter-spacing: -0.02em; 
+        letter-spacing: -0.02em;
     }
 }
 
 /*Default Styles for body*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {

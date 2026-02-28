@@ -13,7 +13,7 @@ import { scrollDown } from '@/utils/navigation.ts';
     <div class="mainHero">
       <article class="txt">
         <Transition name="fade" mode="out-in">
-          <h1 :key="locale">Oriol Plazas León</h1>
+          <h1 :key="locale">Oriol Plazas León <span class="codeSymbol"> =&gt;{}</span></h1>
         </Transition>
         <Transition name="fade" mode="out-in">
           <h3 :key="locale">{{ t('hero.subtitle') }}</h3>
@@ -85,6 +85,10 @@ import { scrollDown } from '@/utils/navigation.ts';
   transform: translateY(-4px);
 }
 
+.codeSymbol {
+  font-family: var(--code-font);
+  color: var(--accent-ui);
+}
 /*Animations for when changing lang */
 .fade-enter-active,
 .fade-leave-active {
