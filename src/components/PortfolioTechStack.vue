@@ -10,6 +10,7 @@ const { t, locale } = useI18n()
             <h3 class="title" :key="locale">{{ t('nav.stack') }}</h3>
         </Transition>
         <div class="categories">
+            <!--Same component but with different props to change the icons-->
             <TechFrontend category="FRONTEND" title="Front-end" class="cat"></TechFrontend>
             <TechFrontend category="BACKEND" title="Back-end" class="cat"></TechFrontend>
             <TechFrontend category="TOOLS" title="Dev tools" class="cat"></TechFrontend>
@@ -34,15 +35,11 @@ const { t, locale } = useI18n()
     gap: 2rem;
     overflow-x: hidden;
 }
-
-.techStack .cat {
-    border: solid 1px var(--accent-ui);
-    border-radius: 10px;
-    padding: 1rem;
-}
-
 .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     width: 100%;
+    gap: 2rem;
 }
 
 /*Animations for when changing lang */
@@ -66,7 +63,9 @@ const { t, locale } = useI18n()
 }
 
 /* Smaller devices */
-@media (max-width: 550px) {}
+@media (max-width: 550px) {
+    
+}
 
 /* Extra small devices */
 @media (max-width: 380px) {}
