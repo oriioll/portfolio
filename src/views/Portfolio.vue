@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import PortfolioHeader from '@/components/PortfolioHeader.vue';
 import PortfolioHero from '@/components/PortfolioHero.vue';
+import PortfolioTechStack from '@/components/PortfolioTechStack.vue';
 </script>
 <template>
     <main>
         <PortfolioHeader />
         <PortfolioHero />
+        <PortfolioTechStack />  
     </main>
 </template>
 <style scoped>

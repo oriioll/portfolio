@@ -20,6 +20,8 @@
     --accent-ui: #ec8f5c;
     --accent-ui-hover: #ff9f6d;
     --accent-ui-rgba: rgba(236, 143, 92, 0.1);
+    --accent-learning-rgba: rgba(160, 160, 160, 0.12);
+    --accent-learning2-rgba: rgba(255, 255, 255, 0.06);
     --accent-ui-low: #c97546;
     /* Font Families */
     --font-primary: 'Poppins', 'Inter', sans-serif;
