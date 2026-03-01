@@ -17,13 +17,17 @@ const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props
         <h5>{{ props.title }}</h5>
         <article class="techGrid">
             <div v-for="t in techStackFiltered" :key="t.name" class="tech" :class="{ 'learning': t.learning }">
-                {{ t.name }}
+                <div class="txt">
+                    {{ t.name }}
+                    <span v-if="t.learning == true" class="learningTag">Learning</span>
+                </div>
                 <img :src="t.icon" :alt="t.name">
             </div>
         </article>
     </article>
 </template>
 <style scoped>
+
 .frontEnd {
     width: 100%;
     border: solid 1px var(--accent-ui);
@@ -47,6 +51,29 @@ const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props
     color: var(--accent-ui);
     font-size: .9rem;
     gap: 1rem;
+    transition: all 0.3s ease-out;
+}
+
+.frontEnd .tech:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(236, 143, 92, 0.15);
+}
+
+.learningTag {
+    font-size: 0.6rem;
+    background-color: rgba(236, 143, 92, 0.1);
+    color: var(--txt-muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid var(--txt-muted);
+    text-transform: uppercase;
+}
+.txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .25rem;
 }
 
 .techGrid {
@@ -54,6 +81,7 @@ const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 1rem;
 }
+
 .frontEnd .learning {
     background-color: var(--accent-learning-rgba);
     color: var(--txt-muted);
@@ -63,26 +91,38 @@ const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props
     width: 2rem;
     height: 2rem;
 }
+.frontEnd .tech:hover img {
+    filter: brightness(1.2); /* Brillo suave al logo */
+    transition: transform 0.3s ease;
+}
 
 /*MEDIA QUERIES - Responsive*/
 /* Small devices */
 @media (max-width: 1000px) {
     .frontEnd .tech {
-        padding: 0.5rem 1rem; 
-        font-size: 0.8rem;    
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
     }
+
     .techGrid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
-        gap: 0.5rem; 
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 0.5rem;
     }
+
     .frontEnd img {
-        width: 1.5rem;        
-        height: 1.5rem;
+        width: 1.75rem;
+        height: 1.75rem;
     }
+    .learningTag {
+    font-size: 0.5rem;
+    background-color: rgba(236, 143, 92, 0.1);
+    color: var(--txt-muted);
+    padding: 1px 4px;
+    
+}
+
 }
 
 /* Smaller devices */
-@media (max-width: 550px) {
-
-}
+@media (max-width: 550px) {}
 </style>
