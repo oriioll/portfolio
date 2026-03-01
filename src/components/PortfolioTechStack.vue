@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import TechFrontend from './techStack/TechFront.vue';
-import TechBackend from './techStack/TechBack.vue';
-import Tools from './techStack/Tools.vue';
 //Importing i18n objects
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
@@ -12,9 +10,10 @@ const { t, locale } = useI18n()
             <h3 class="title" :key="locale">{{ t('nav.stack') }}</h3>
         </Transition>
         <div class="categories">
-            <TechFrontend class="cat"></TechFrontend>
-            <!--<TechBackend></TechBackend>
-            <Tools></Tools> -->
+            <TechFrontend category="FRONTEND" title="Front-end" class="cat"></TechFrontend>
+            <TechFrontend category="BACKEND" title="Back-end" class="cat"></TechFrontend>
+            <TechFrontend category="TOOLS" title="Dev tools" class="cat"></TechFrontend>
+
         </div>
     </section>
 </template>

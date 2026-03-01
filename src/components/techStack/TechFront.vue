@@ -1,13 +1,21 @@
 <script setup lang="ts">
 import type TechItem from '@/data/model/TechItem';
 import { techStack } from '@/data/techStack.ts';
+
+//Prop for knowing which category to show
+const props = defineProps({
+    category: String,
+    title: String
+})
+
 //New array by filtering the original one by category
-const techStackFront: TechItem[] = techStack.filter(i => i.category === 'FRONTEND');
+const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props.category);
+
 </script>
 <template>
     <article class="frontEnd">
-        <h5>Front-end</h5>
-        <div v-for="t in techStackFront" :key="t.name" class="tech" :class="{'learning' : t.learning}">
+        <h5>{{ props.title }}</h5>
+        <div v-for="t in techStackFiltered" :key="t.name" class="tech" :class="{'learning' : t.learning}">
             {{ t.name }}
             <img :src="t.icon" :alt="t.name">
         </div>
