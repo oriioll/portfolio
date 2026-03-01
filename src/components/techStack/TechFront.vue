@@ -1,6 +1,9 @@
 <script setup lang="ts">
-import type TechItem from '@/data/model/TechItem';
+import { computed } from 'vue';
 import { techStack } from '@/data/techStack.ts';
+
+import { useI18n } from 'vue-i18n'
+const { t, locale } = useI18n()
 
 //Prop for knowing which category to show
 const props = defineProps({
@@ -9,25 +12,29 @@ const props = defineProps({
 })
 
 //New array by filtering the original one by category
-const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props.category);
+const techStackFiltered = computed(() => {
+    return techStack.filter(i => i.category === props.category);
+});
 
 </script>
 <template>
     <article class="frontEnd">
         <h5>{{ props.title }}</h5>
         <article class="techGrid">
-            <div v-for="t in techStackFiltered" :key="t.name" class="tech" :class="{ 'learning': t.learning }">
+            <div v-for="tech in techStackFiltered" :key="tech.name" class="tech" :class="{ 'learning': tech.learning }">
                 <div class="txt">
-                    {{ t.name }}
-                    <span v-if="t.learning == true" class="learningTag">Learning</span>
+                    {{ tech.name }}
+                    <Transition name="fade" mode="out-in">
+                        <span v-if="tech.learning == true" class="learningTag" :key="locale">{{ t('tech.learning') }}</span>
+                    </Transition>
+
                 </div>
-                <img :src="t.icon" :alt="t.name">
+                <img :src="tech.icon" :alt="tech.name">
             </div>
         </article>
     </article>
 </template>
 <style scoped>
-
 .frontEnd {
     width: 100%;
     border: solid 1px var(--accent-ui);
@@ -68,6 +75,7 @@ const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props
     border: 1px solid var(--txt-muted);
     text-transform: uppercase;
 }
+
 .txt {
     display: flex;
     flex-direction: column;
@@ -91,11 +99,22 @@ const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props
     width: 2rem;
     height: 2rem;
 }
+
 .frontEnd .tech:hover img {
-    filter: brightness(1.2); /* Brillo suave al logo */
+    filter: brightness(1.2);
+    /* Brillo suave al logo */
     transition: transform 0.3s ease;
 }
+/*Animations for when changing lang */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .25s ease;
+}
 
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 /*MEDIA QUERIES - Responsive*/
 /* Small devices */
 @media (max-width: 1000px) {
@@ -113,13 +132,14 @@ const techStackFiltered: TechItem[] = techStack.filter(i => i.category === props
         width: 1.75rem;
         height: 1.75rem;
     }
+
     .learningTag {
-    font-size: 0.5rem;
-    background-color: rgba(236, 143, 92, 0.1);
-    color: var(--txt-muted);
-    padding: 1px 4px;
-    
-}
+        font-size: 0.5rem;
+        background-color: rgba(236, 143, 92, 0.1);
+        color: var(--txt-muted);
+        padding: 1px 4px;
+
+    }
 
 }
 
