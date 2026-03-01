@@ -90,6 +90,8 @@ const openLink = (url: string): void => {
 .ctas {
     width: 90%;
     max-width: 100%;
+    padding: 0 2rem;          
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -207,8 +209,8 @@ const openLink = (url: string): void => {
     }
 
     .ctas {
-        gap: 0.6rem;
-        width: 95%;
+        gap: 1rem;
+        width: 90%;
     }
 
     .ctas svg {
@@ -237,8 +239,8 @@ const openLink = (url: string): void => {
     }
 
     .ctas {
-        gap: 0.4rem;
-        width: 98%;
+        width: 90%;
+        gap: 1rem;
         flex-wrap: wrap;
     }
 

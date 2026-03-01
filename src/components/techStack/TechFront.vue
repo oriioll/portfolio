@@ -144,5 +144,15 @@ const techStackFiltered = computed(() => {
 }
 
 /* Smaller devices */
-@media (max-width: 550px) {}
+@media (max-width: 550px) {
+    .techGrid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .frontEnd img {
+        width: 1.35rem;
+        height: 1.35rem;
+    }
+}
 </style>
