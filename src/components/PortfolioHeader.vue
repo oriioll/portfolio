@@ -23,10 +23,30 @@ header {
     top: 0;
     z-index: 100;
     background: var(--bg-primary);
-    border-bottom: solid 2px var(--accent-ui);
     padding: .5rem;
     box-sizing: border-box;
     overflow: hidden;
+    border-bottom: solid 2px var(--accent-ui);   
+}
+
+/* If user navigator supports animation-timeline */
+@supports (animation-timeline: scroll()) {
+  header {
+    border-bottom: none;
+    animation: borderHeader ease-in-out both;
+    animation-timeline: scroll(root);
+    animation-range: 0 150px;
+  }
+}
+
+/*KEYFRAMES - Animations*/
+@keyframes borderHeader {
+  from {
+    border-bottom: solid 2px rgba(255, 255, 255, 0);
+  }
+  to {
+    border-bottom: solid 2px var(--accent-ui);
+  }
 }
 /*MEDIA QUERIES - Responsive*/
 /* Smaller devices */
