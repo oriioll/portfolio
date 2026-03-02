@@ -12,6 +12,7 @@
 
 /* CSS Variables */
 :root {
+    color-scheme: dark;
     /* Base Colors */
     --bg-primary: #232323;
     --txt-primary: #F1F1F1;
