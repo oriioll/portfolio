@@ -67,13 +67,13 @@ export const techStack: TechItem[] = [
     {
         category: "TOOLS",
         name: "GitHub",
-        icon: "/icons/github-light.svg",
+        icon: "/icons/githublight.svg",
         learning: false
     },
     {
         category: "TOOLS",
         name: "Vercel",
-        icon: "/icons/vercel-light.svg",
+        icon: "/icons/vercelight.svg",
         learning: false
     },
     {
