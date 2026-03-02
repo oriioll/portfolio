@@ -30,10 +30,10 @@
     --code-font: 'Cascadia Code', monospace;
 
     /*Font Sizes  - https://typescale.com  - Major Secpnd (https://gemini.google.com)*/
-    --step--2: clamp(0.69rem, 0.68rem + 0.07vw, 0.75rem);
-    --step--1: clamp(0.78rem, 0.76rem + 0.1vw, 0.88rem);
-    --step-0: clamp(0.9rem, 0.86rem + 0.2vw, 1.05rem);   /* p */
-    --step-1: clamp(1.05rem, 1rem + 0.25vw, 1.25rem);   /* h6 */
+    --step--2: clamp(0.6rem, 0.58rem + 0.08vw, 0.7rem);
+    --step--1: clamp(0.7rem, 0.68rem + 0.1vw, 0.85rem);
+    --step-0: clamp(0.8rem, 0.75rem + 0.25vw, 1.05rem);  
+    --step-1: clamp(1rem, 0.95rem + 0.25vw, 1.2rem);
     --step-2: clamp(1.15rem, 1.08rem + 0.35vw, 1.45rem); /* h5 */
     --step-3: clamp(1.3rem, 1.2rem + 0.5vw, 1.7rem);    /* h4 */
     --step-4: clamp(1.5rem, 1.35rem + 0.75vw, 2.1rem);  /* h2-h3 */
@@ -46,7 +46,11 @@ h3 { font-size: var(--step-3); line-height: 1.2; }
 h4 { font-size: var(--step-2); }
 h5 { font-size: var(--step-1); }
 h6 { font-size: var(--step-0); }
-p  { font-size: var(--step-0); line-height: 1.6; }
+p  { 
+    font-size: var(--step-0); 
+    line-height: 1.5;           
+    letter-spacing: -0.01em;    
+}
 
 
 /*Default Styles for body*/
