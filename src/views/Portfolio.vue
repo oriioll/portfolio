@@ -24,7 +24,7 @@ main {
 
 @media (min-width: 1000px) {
     main {
-        gap: 5rem;
+        gap: 3rem;
     }
 }
 </style>

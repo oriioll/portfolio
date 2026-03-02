@@ -54,13 +54,12 @@ a {
   color: var(--bg-primary);
   color: var(--accent-ui);
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 500;
   transition: all .25s ease-out;
 }
 
 a:hover {
-  color: var(--txt-primary);
-
+  filter: brightness(1.2);
 }
 
 /*Animations for when changing lang */
@@ -91,7 +90,7 @@ a:hover {
 @media (max-width: 550px) {
   a {
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
   }
 

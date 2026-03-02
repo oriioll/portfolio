@@ -12,3 +12,14 @@ export const scrollDown = (vhsUnits: number): void => {
       behavior: 'smooth'
     });
 }
+
+/**
+ * Arrow function that opens a link in a new tab
+ * @param url the url you want to open in a new tab
+ * @author Oriol Plazas León
+ * @since 27/02/2026
+ * @see window()
+ */
+export const openLink = (url: string): void => {
+    window.open(url, '_blank');
+}

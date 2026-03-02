@@ -23,7 +23,7 @@ header {
     top: 0;
     z-index: 100;
     background: var(--bg-primary);
-    padding: .5rem;
+    padding: 1.25rem .5rem;
     box-sizing: border-box;
     overflow: hidden;
     border-bottom: solid 2px var(--accent-ui);   
@@ -54,7 +54,6 @@ header {
   header {
     gap: .3rem;
     padding: 1rem 0.25rem;
-    border-radius: 0 0 10px 10px;
   }
 }
 </style>

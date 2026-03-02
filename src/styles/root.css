@@ -14,7 +14,7 @@
 :root {
     color-scheme: dark;
     /* Base Colors */
-    --bg-primary: #161616;
+    --bg-primary: #151515;
     --txt-primary: #F1F1F1;
     --txt-muted: #A0A0A0;
     /* Accent Colors */
@@ -28,121 +28,26 @@
     --font-primary: 'Poppins', 'Inter', sans-serif;
     --font-symbols: 'Montserrat', 'Onest', sans-serif;
     --code-font: 'Cascadia Code', monospace;
+
+    /*Font Sizes  - https://typescale.com  - Major Secpnd (https://gemini.google.com)*/
+    --step--2: clamp(0.69rem, 0.68rem + 0.07vw, 0.75rem);
+    --step--1: clamp(0.78rem, 0.76rem + 0.1vw, 0.88rem);
+    --step-0: clamp(0.9rem, 0.86rem + 0.2vw, 1.05rem);   /* p */
+    --step-1: clamp(1.05rem, 1rem + 0.25vw, 1.25rem);   /* h6 */
+    --step-2: clamp(1.15rem, 1.08rem + 0.35vw, 1.45rem); /* h5 */
+    --step-3: clamp(1.3rem, 1.2rem + 0.5vw, 1.7rem);    /* h4 */
+    --step-4: clamp(1.5rem, 1.35rem + 0.75vw, 2.1rem);  /* h2-h3 */
+    --step-5: clamp(1.75rem, 1.55rem + 1vw, 2.45rem);   /* h1 */
 }
 
-/*Font Sizes  - https://typescale.com*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    line-height: 1.2;
-}
+h1 { font-size: var(--step-5); letter-spacing: -0.02em; line-height: 1.1; }
+h2 { font-size: var(--step-4); letter-spacing: -0.01em; line-height: 1.2; }
+h3 { font-size: var(--step-3); line-height: 1.2; }
+h4 { font-size: var(--step-2); }
+h5 { font-size: var(--step-1); }
+h6 { font-size: var(--step-0); }
+p  { font-size: var(--step-0); line-height: 1.6; }
 
-h1 {
-    font-size: 3.815rem;
-    font-feature-settings: "liga" 1, "calt" 1;
-
-}
-
-h2 {
-    font-size: 3.052rem;
-}
-
-h3 {
-    font-size: 2.441rem;
-}
-
-h4 {
-    font-size: 1.953rem;
-}
-
-h5 {
-    font-size: 1.563rem;
-}
-
-h6 {
-    font-size: 1.25rem;
-
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-
-/* MEDIA QUERY FOR FONT-SIZING in small screens */
-@media (max-width: 800px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.75rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-    }
-
-    h5 {
-        font-size: 1.1rem;
-    }
-
-    h6 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    h4 {
-        font-size: 1.15rem;
-    }
-
-    h5 {
-        font-size: 1.05rem;
-    }
-
-    h6 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-        line-height: 1.4;
-    }
-
-    h1,
-    h2,
-    h3 {
-        line-height: 1.1;
-        letter-spacing: -0.02em;
-    }
-}
 
 /*Default Styles for body*/
 * {

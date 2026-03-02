@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 //Importing i18n objects
 import { useI18n } from 'vue-i18n';
+import{ openLink } from '@/utils/navigation';
 const { t, locale } = useI18n();
 
 //Handling email copy to clipboard
@@ -33,16 +34,7 @@ const changeSvg = (): void => {
     }, 2000);
 }
 
-/**
- * Arrow function that opens a link in a new tab
- * @param url the url you want to open in a new tab
- * @author Oriol Plazas León
- * @since 27/02/2026
- * @see window()
- */
-const openLink = (url: string): void => {
-    window.open(url, '_blank');
-}
+
 
 </script>
 <template>
@@ -145,12 +137,18 @@ const openLink = (url: string): void => {
 .mail .cpSvg {
     width: 1.25rem;
     height: 1.25rem;
+    animation: all .3s ease;
+}
+.mail .cpSvg:hover {
+    animation: all .3s ease;
+    transform: translateY(0);
 }
 
 .mail .successSvg {
     width: 1.25rem;
     height: 1.25rem;
     pointer-events: none;
+    animation: all .3s ease;
 }
 
 /*Animations for when changing lang */

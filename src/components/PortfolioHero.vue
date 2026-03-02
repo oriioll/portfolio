@@ -13,7 +13,7 @@ import { scrollDown } from '@/utils/navigation.ts';
     <div class="mainHero">
       <article class="txt">
         <Transition name="fade" mode="out-in">
-          <h1 :key="locale">Oriol Plazas León <span class="codeSymbol"> =&gt;{}</span></h1>
+          <h1 :key="locale">Oriol Plazas León<span class="codeSymbol">  =&gt; {}</span></h1>
         </Transition>
         <Transition name="fade" mode="out-in">
           <h3 :key="locale">{{ t('hero.subtitle') }}</h3>
@@ -88,6 +88,10 @@ import { scrollDown } from '@/utils/navigation.ts';
 .codeSymbol {
   font-family: var(--code-font);
   color: var(--accent-ui);
+  /*Ligatures for arrow*/
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings: "liga" 1, "calt" 1;
+  text-rendering: optimizeLegibility;
 }
 /*Animations for when changing lang */
 .fade-enter-active,
@@ -113,8 +117,8 @@ import { scrollDown } from '@/utils/navigation.ts';
   }
 
   .hero img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   .txt {

@@ -119,7 +119,7 @@ aside {
 }
 
 .emoji {
-    width: 4rem;
+    width: 3rem;
     height: auto;
     cursor: pointer;
     filter: grayscale(0.6);
