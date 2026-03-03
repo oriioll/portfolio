@@ -121,7 +121,7 @@ const techStackFiltered = computed(() => {
 /* Small devices */
 @media (max-width: 1000px) {
     .frontEnd .tech {
-        padding: 0.5rem 1rem;
+        padding: 0.25rem 1rem;
         font-size: 0.8rem;
     }
 
@@ -136,11 +136,14 @@ const techStackFiltered = computed(() => {
     }
 
     .learningTag {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         background-color: rgba(236, 143, 92, 0.1);
         color: var(--txt-muted);
         padding: 1px 4px;
+    }
 
+    .txt {
+        font-size: .6rem;
     }
 
 }
