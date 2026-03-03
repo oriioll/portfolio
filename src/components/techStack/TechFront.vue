@@ -19,7 +19,7 @@ const techStackFiltered = computed(() => {
 </script>
 <template>
     <article class="frontEnd">
-        <h5>{{ props.title }}</h5>
+        <h5 class="title">{{ props.title }}</h5>
         <article class="techGrid">
             <div v-for="tech in techStackFiltered" :key="tech.name" class="tech" :class="{ 'learning': tech.learning }">
                 <div class="txt">
@@ -44,7 +44,9 @@ const techStackFiltered = computed(() => {
     flex-direction: column;
     gap: 1rem;
 }
-
+.title {
+    color: var(--accent-ui);
+}
 .frontEnd .tech {
     display: flex;
     flex-direction: row;

@@ -18,9 +18,6 @@ const { t, locale } = useI18n()
     </section>
 </template>
 <style scoped>
-.title {
-    color: var(--accent-ui);
-}
 
 .techStack {
     width: 90%;
@@ -59,7 +56,6 @@ const { t, locale } = useI18n()
     .techStack {
         padding: 1.5rem 1rem;
     }
-
 }
 
 /* Smaller devices */
