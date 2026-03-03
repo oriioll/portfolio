@@ -12,5 +12,9 @@ export default {
     },
     tech: {
         learning: "Learning",
+    },
+    experience: {
+        lectaRole: "IT Systems Trainee",
+        lectaDesc: "IT support at central headquarters, managing the end-user infrastructure, provisioning workstations and handling the operational continuity for all the departments using Ticketing software."
     }
 }

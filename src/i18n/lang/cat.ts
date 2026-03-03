@@ -12,5 +12,9 @@ export default {
     },
     tech: {
         learning: "Aprenent",
+    },
+    experience: {
+        lectaRole: "Tècnic informàtic en pràctiques",
+        lectaDesc: "Suport tècnic a les oficines centrals, gestionant la infraestructura de l'usuari final maquetant equips i assegurant la continuat operativa dels departaments amb programes de Ticketing.."
     }
 }

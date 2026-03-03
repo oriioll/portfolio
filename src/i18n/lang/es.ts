@@ -12,5 +12,9 @@ export default {
     },
     tech: {
         learning: "Aprendiendo",
+    },
+    experience: {
+        lectaRole: "Técnico informático en prácticas",
+        lectaDesc: "Soporte técnico en las oficinas centrales, gestionando la infraestructura de usuario final maquetando equipos y asegurando la continuidad operativa de los departamentos con programes de Ticketing."
     }
 };

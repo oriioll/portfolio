@@ -10,8 +10,8 @@
  */
 export default interface Job {
     company: string;
-    role: string;
-    desc: string;
+    roleKey: string;
+    descKey: string;
     hireDate: Date;
     endDate: Date;
 }
