@@ -1,0 +1,81 @@
+import type Project from "./model/Project.ts";
+
+export const PROJECTS: Project[] = [
+  {
+    titleKey: "projects.loomi.title",
+    descKey: "projects.loomi.desc",
+    image: "/public/mockups/mockupLoomi.webp",
+    stack: [
+      {
+        category: "FRONTEND",
+        name: "Vue.js",
+        icon: "/icons/vue.svg",
+        learning: true,
+      },
+      {
+        category: "FRONTEND",
+        name: "TypeScript",
+        icon: "/icons/ts.svg",
+        learning: true,
+      },
+    ],
+    demoUrl: "https://apploomi.vercel.app",
+    githubUrl: "https://github.com/oriioll/loomi",
+    status: "Active dev",
+  },
+  {
+    titleKey: "projects.financeApp.title",
+    descKey: "projects.financeApp.desc",
+    image: "/public/mockups/mockupFinanceApp.webp",
+    stack: [
+      {
+        category: "BACKEND",
+        name: "Kotlin",
+        icon: "/icons/kotlin.svg",
+        learning: false,
+      },
+      {
+        category: "FRONTEND",
+        name: "Android Studio",
+        icon: "/icons/android.svg",
+        learning: false,
+      },
+      {
+        category: "BACKEND",
+        name: "Supabase",
+        icon: "/icons/supabase.svg",
+        learning: true,
+      },
+    ],
+    githubUrl: "https://github.com/oriioll/financeApp",
+    status: "Active dev",
+  },
+  {
+    titleKey: "projects.bocao.title",
+    descKey: "projects.bocao.desc",
+    image: "/public/mockups/mockupBocao.webp",
+    stack: [
+      {
+        category: "FRONTEND",
+        name: "HTML5",
+        icon: "/icons/html.svg",
+        learning: false,
+      },
+      {
+        category: "FRONTEND",
+        name: "CSS3",
+        icon: "/icons/css.svg",
+        learning: false,
+      },
+      {
+        category: "FRONTEND",
+        name: "JavaScript",
+        icon: "/icons/js.svg",
+        learning: false,
+      },
+    ],
+    demoUrl: "https://oriioll.github.io/bocao-project/",
+    githubUrl: "https://github.com/oriioll/bocao-project",
+    status: "Finished",
+  },
+];

@@ -16,5 +16,19 @@ export default {
     experience: {
         lectaRole: "Técnico informático en prácticas",
         lectaDesc: "Soporte técnico en las oficinas centrales, gestionando la infraestructura de usuario final maquetando equipos y asegurando la continuidad operativa de los departamentos con programes de Ticketing."
+    },
+    projects: {
+        financeApp: {
+            title: "Finance-App - Gestión de capital personal",
+            desc: "Aplicación privada de Android para gestionar movimientos y capital total mediante el análisis de categorías."
+        },
+        loomi: {
+            title: "Loomi - Sistema de gestión de aprendizaje unificado",
+            desc: "Plataforma educativa (LMS) diseñada para optimizar el flujo de trabajo entre docentes y alumnos mediante una interfaz moderna y escalable."
+        },
+        bocaoProject: {
+            title: "BOCAO - Interfaz de delivery con carrito dinámico",
+            desc: "Implementación frontend de alta fidelidad basada en un diseño profesional, con lógica de carrito y gestión de perfiles en JavaScript nativo."
+        }
     }
 };
