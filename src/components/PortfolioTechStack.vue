@@ -5,7 +5,7 @@ import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
 </script>
 <template>
-    <section class="techStack">
+    <section class="techStack" id="stack">
         <Transition name="fade" mode="out-in">
             <h3 class="title" :key="locale">{{ t('nav.stack') }}</h3>
         </Transition>

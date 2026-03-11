@@ -10,25 +10,25 @@ const { t, locale } = useI18n();
     <ul>
       <li>
         <Transition name="fade" mode="out-in">
-          <a  :key="locale">{{ t('nav.about') }}</a>
+          <a href="#hero" :key="locale">{{ t('nav.about') }}</a>
         </Transition>
       </li>
 
       <li>
         <Transition name="fade" mode="out-in">
-          <a :key="locale">{{ t('nav.experience') }}</a>
+          <a href="#experience" :key="locale">{{ t('nav.experience') }}</a>
         </Transition>
       </li>
 
       <li>
         <Transition name="fade" mode="out-in">
-          <a :key="locale">{{ t('nav.projects') }}</a>
+          <a href="#projects" :key="locale">{{ t('nav.projects') }}</a>
         </Transition>
       </li>
 
       <li>
         <Transition name="fade" mode="out-in">
-          <a  :key="locale" id="cta" >{{ t('nav.stack') }}</a>
+          <a href="#stack" :key="locale" id="cta" >{{ t('nav.stack') }}</a>
         </Transition>
       </li>
     </ul>

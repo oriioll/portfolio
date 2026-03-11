@@ -7,7 +7,7 @@ const { t, locale } = useI18n()
 import { EXPERIENCE } from '@/data/experience';
 </script>
 <template>
-    <section class="experience">
+    <section class="experience" id="experience">
         <Transition name="fade" mode="out-in">
             <h3 class="title" :key="locale">{{ t('nav.experience') }}</h3>
         </Transition>

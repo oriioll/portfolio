@@ -69,4 +69,24 @@ body {
 
 html {
     width: 100%;
+    scroll-behavior: smooth;
+}
+
+/*Scroll margin top to make navbar work better and see the titles correctly without the sticky header eating it*/
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Disable hovers on touch devices */
+@media (hover: none) {
+    a:hover,
+    button:hover,
+    input:hover,
+    [role="button"]:hover {
+        background-color: inherit;
+        color: inherit;
+        filter: none;
+        transform: none;
+        box-shadow: none;
+    }
 }
