@@ -2,6 +2,8 @@
 //Importing i18n objects
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
+
+//import util function
 </script>
 <template>
   <nav>
@@ -33,6 +35,9 @@ const { t, locale } = useI18n();
   </nav>
 </template>
 <style scoped>
+* {
+  scroll-behavior: smooth;
+}
 nav {
   scroll-behavior: smooth;
   height: auto;

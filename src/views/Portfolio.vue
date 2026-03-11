@@ -3,12 +3,14 @@ import PortfolioHeader from '@/components/PortfolioHeader.vue';
 import PortfolioHero from '@/components/PortfolioHero.vue';
 import PortfolioExperience from '@/components/PortfolioExperience.vue';
 import PortfolioTechStack from '@/components/PortfolioTechStack.vue';
+import PortfolioProjects from "@/components/PortfolioProjects.vue";
 </script>
 <template>
     <main>
         <PortfolioHeader />
         <PortfolioHero />
         <PortfolioExperience />
+        <PortfolioProjects />
         <PortfolioTechStack />  
     </main>
 </template>

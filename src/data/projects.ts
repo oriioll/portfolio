@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
   {
     titleKey: "projects.loomi.title",
     descKey: "projects.loomi.desc",
-    image: "/public/mockups/mockupLoomi.webp",
+    image: "/mockups/mockupLoomi.webp",
     stack: [
       {
         category: "FRONTEND",
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
   {
     titleKey: "projects.financeApp.title",
     descKey: "projects.financeApp.desc",
-    image: "/public/mockups/mockupFinanceApp.webp",
+    image: "/mockups/mockupFinanceApp.webp",
     stack: [
       {
         category: "BACKEND",
@@ -51,9 +51,9 @@ export const PROJECTS: Project[] = [
     status: "Active dev",
   },
   {
-    titleKey: "projects.bocao.title",
-    descKey: "projects.bocao.desc",
-    image: "/public/mockups/mockupBocao.webp",
+    titleKey: "projects.bocaoProject.title",
+    descKey: "projects.bocaoProject.desc",
+    image: "/mockups/mockupBocao.webp",
     stack: [
       {
         category: "FRONTEND",
