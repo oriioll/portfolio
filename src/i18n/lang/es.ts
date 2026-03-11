@@ -30,5 +30,8 @@ export default {
             title: "BOCAO - Interfaz de delivery con carrito dinámico",
             desc: "Implementación frontend de alta fidelidad basada en un diseño profesional, con lógica de carrito y gestión de perfiles en JavaScript nativo."
         }
+    },
+    footer: {
+        build: "Hecho con:"
     }
 };

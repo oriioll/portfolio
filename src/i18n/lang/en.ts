@@ -30,5 +30,8 @@ export default {
             title: "BOCAO - Delivery UI with dynamic cart",
             desc: "High-fidelity frontend implementation based on a professional design, featuring dynamic cart logic and profile management in vanilla JavaScript."
         }
+    },
+    footer: {
+        build: "Built with:"
     }
 }

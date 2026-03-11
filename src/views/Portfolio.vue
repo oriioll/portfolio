@@ -4,6 +4,7 @@ import PortfolioHero from '@/components/PortfolioHero.vue';
 import PortfolioExperience from '@/components/PortfolioExperience.vue';
 import PortfolioTechStack from '@/components/PortfolioTechStack.vue';
 import PortfolioProjects from "@/components/PortfolioProjects.vue";
+import PortfolioFooter from '@/components/PortfolioFooter.vue';
 </script>
 <template>
     <main>
@@ -11,7 +12,8 @@ import PortfolioProjects from "@/components/PortfolioProjects.vue";
         <PortfolioHero />
         <PortfolioExperience />
         <PortfolioProjects />
-        <PortfolioTechStack />  
+        <PortfolioTechStack />
+        <PortfolioFooter />  
     </main>
 </template>
 <style scoped>
