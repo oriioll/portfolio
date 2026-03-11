@@ -5,7 +5,7 @@
  * @since 28/02/2026
  */
 export const scrollDown = (vhsUnits: number): void => {
-  const VH = vhsUnits * window.innerHeight / 100;
+  const VH: number = vhsUnits * window.innerHeight / 100;
     window.scrollBy({
       top: VH,
       left: 0,
@@ -22,4 +22,19 @@ export const scrollDown = (vhsUnits: number): void => {
  */
 export const openLink = (url: string): void => {
     window.open(url, '_blank');
+}
+
+/**
+ * Arrow function that scrolls to vh position with a smooth scroll behavior
+ * @param position the position you want to scroll to
+ * @author Oriol Plazas León
+ * @since 11/03/2026
+ */
+export const scrollTo = (position: number): void => {
+  const VH: number = position * window.innerHeight / 100;
+  window.scrollTo({
+    top: VH,
+    left: 0,
+    behavior: 'smooth'
+  })
 }

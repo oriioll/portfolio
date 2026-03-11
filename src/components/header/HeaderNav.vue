@@ -3,32 +3,32 @@
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 
-//import util function
+
 </script>
 <template>
   <nav>
     <ul>
       <li>
         <Transition name="fade" mode="out-in">
-          <a :key="locale" href="#me">{{ t('nav.about') }}</a>
+          <a  :key="locale">{{ t('nav.about') }}</a>
         </Transition>
       </li>
 
       <li>
         <Transition name="fade" mode="out-in">
-          <a :key="locale" href="#experience">{{ t('nav.experience') }}</a>
+          <a :key="locale">{{ t('nav.experience') }}</a>
         </Transition>
       </li>
 
       <li>
         <Transition name="fade" mode="out-in">
-          <a :key="locale" href="#projects">{{ t('nav.projects') }}</a>
+          <a :key="locale">{{ t('nav.projects') }}</a>
         </Transition>
       </li>
 
       <li>
         <Transition name="fade" mode="out-in">
-          <a :key="locale" id="cta" href="#stack">{{ t('nav.stack') }}</a>
+          <a  :key="locale" id="cta" >{{ t('nav.stack') }}</a>
         </Transition>
       </li>
     </ul>

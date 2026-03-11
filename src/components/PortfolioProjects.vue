@@ -64,7 +64,6 @@ import { openLink } from '@/utils/navigation';
   padding: 1rem;
   border: solid 1px var(--accent-ui);
   border-radius: 10px;
-
 }
 
 .mockup {
@@ -79,7 +78,9 @@ import { openLink } from '@/utils/navigation';
   display: flex;
   justify-content: space-between;
 }
-.icons .techs, .icons .url {
+
+.icons .techs,
+.icons .url {
   width: fit-content;
   display: flex;
   flex-direction: row;
@@ -91,10 +92,12 @@ import { openLink } from '@/utils/navigation';
   padding: .75rem;
 }
 
-.techs img, .url img {
+.techs img,
+.url img {
   width: 1.5rem;
   height: 1.5rem;
 }
+
 .url img {
   cursor: pointer;
   transition: all .3s ease-out;
@@ -125,8 +128,18 @@ import { openLink } from '@/utils/navigation';
     padding: 1.5rem 1rem;
   }
 
+  .project {
+    gap: .5rem;
+  }
+
   .projects .projects-container {
     width: 100%;
+  }
+
+  .techs img,
+  .url img {
+    width: 1rem;
+    height: 1rem;
   }
 
 }
