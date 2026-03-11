@@ -3,6 +3,9 @@
 
 ![Mockup Image](public/mockups/portfolioMockup.png)
 
+## 🌐 Live Demo
+**Visit my portfolio: [https://oriolplazas.vercel.app](https://oriolplazas.vercel.app)**
+
 ## 🛠️ Tech Stack
 - **Vue 3**
 - **TypeScript**
