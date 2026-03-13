@@ -47,6 +47,7 @@ export const PROJECTS: Project[] = [
         learning: true,
       },
     ],
+    demoUrl: "https://https://appfinance-alpha.vercel.app/",
     githubUrl: "https://github.com/oriioll/financeApp",
     status: "Active dev",
   },
