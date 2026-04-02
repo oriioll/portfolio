@@ -29,6 +29,10 @@ export default {
         bocaoProject: {
             title: "BOCAO - Interfície de delivery amb carret dinàmic",
             desc: "Implementació frontend d'alta fidelitat basada en un disseny professional, amb lògica de carret i gestió de perfils en JavaScript natiu."
+        },
+        shorty: {
+            title: "Shorty - Simplificador d'URLs ràpid i funcional",
+            desc: "Eina desenvolupada amb Vue 3 i TypeScript per simplificar enllaços llargs. Inclou integració amb l'API de TinyURL, validació de dades i un disseny optimitzat per a mòbils."
         }
     },
     footer: {

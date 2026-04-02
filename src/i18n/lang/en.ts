@@ -29,6 +29,10 @@ export default {
         bocaoProject: {
             title: "BOCAO - Delivery UI with dynamic cart",
             desc: "High-fidelity frontend implementation based on a professional design, featuring dynamic cart logic and profile management in vanilla JavaScript."
+        },
+        shorty: {
+            title: "Shorty - Fast and simple URL shortener",
+            desc: "A tool built with Vue 3 and TypeScript to simplify long links. It features TinyURL API integration, data validation, and a high-quality mobile-friendly design."
         }
     },
     footer: {
