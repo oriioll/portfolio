@@ -2,9 +2,9 @@ import type Project from "./model/Project.ts";
 
 export const PROJECTS: Project[] = [
   {
-    titleKey: "projects.loomi.title",
-    descKey: "projects.loomi.desc",
-    image: "/mockups/mockupLoomi.webp",
+    titleKey: "projects.cineflic.title",
+    descKey: "projects.cineflic.desc",
+    image: "/mockups/cineflic.webp",
     stack: [
       {
         category: "FRONTEND",
@@ -18,9 +18,15 @@ export const PROJECTS: Project[] = [
         icon: "/icons/ts.svg",
         learning: true,
       },
+      {
+        category: "BACKEND",
+        name: "Supabase",
+        icon: "/icons/supabase.svg",
+        learning: true,
+      },
     ],
-    demoUrl: "https://apploomi.vercel.app",
-    githubUrl: "https://github.com/oriioll/loomi",
+    demoUrl: "https://mycineflic.vercel.app",
+    githubUrl: "https://github.com/oriioll/cineflic",
     status: "Active dev",
   },
   {
@@ -47,8 +53,30 @@ export const PROJECTS: Project[] = [
         learning: true,
       },
     ],
-    demoUrl: "https://https://appfinance-alpha.vercel.app/",
+    demoUrl: "https://appfinance-alpha.vercel.app/",
     githubUrl: "https://github.com/oriioll/financeApp",
+    status: "Active dev",
+  },
+  {
+    titleKey: "projects.loomi.title",
+    descKey: "projects.loomi.desc",
+    image: "/mockups/mockupLoomi.webp",
+    stack: [
+      {
+        category: "FRONTEND",
+        name: "Vue.js",
+        icon: "/icons/vue.svg",
+        learning: true,
+      },
+      {
+        category: "FRONTEND",
+        name: "TypeScript",
+        icon: "/icons/ts.svg",
+        learning: true,
+      },
+    ],
+    demoUrl: "https://apploomi.vercel.app",
+    githubUrl: "https://github.com/oriioll/loomi",
     status: "Active dev",
   },
   {

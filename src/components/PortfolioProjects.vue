@@ -22,7 +22,7 @@ import { openLink } from '@/utils/navigation';
         <p>{{ t(project.descKey) }}</p>
         <div class="icons">
           <div class="techs">
-            <img v-for="tech in project.stack" :src="tech.icon" alt="Used in project tech icon" class="techIcon">
+            <img v-for="tech in project.stack" :src="tech.icon" alt="Used in project tech icon" class="techIcon" loading="lazy">
           </div>
           <div class="url">
             <img v-if="project.demoUrl" @click="openLink(project.demoUrl)" src="/public/icons/link.svg" alt="Demo link">

@@ -32,7 +32,11 @@ export default {
         },
         shorty: {
             title: "Shorty - Simplificador d'URLs ràpid i funcional",
-            desc: "Eina desenvolupada amb Vue 3 i TypeScript per simplificar enllaços llargs. Inclou integració amb l'API de TinyURL, validació de dades i un disseny optimitzat per a mòbils."
+            desc: "Eina per simplificar enllaços llargs. Inclou integració amb l'API de TinyURL."
+        },
+        cineflic: {
+            title: "CineFlic - Explorador i col·lecció de pel·lícules",
+            desc: "Aplicació web per explorar pel·lícules i gestionar una col·lecció personal amb autenticació d'usuari utilitzant l'API de TMDB."
         }
     },
     footer: {

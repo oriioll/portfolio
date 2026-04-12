@@ -53,6 +53,17 @@ export const techStack: TechItem[] = [
     },
     {
         category: "BACKEND",
+        name: "Node.js",
+        icon: "/icons/nodejs.svg",
+        learning: true
+    },{
+        category: "BACKEND",
+        name: "Express.js",
+        icon: "/icons/expressjs_dark.svg",
+        learning: true
+    },
+    {
+        category: "BACKEND",
         name: "Supabase",
         icon: "/icons/supabase.svg",
         learning: true
