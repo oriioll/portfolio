@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
     ],
     demoUrl: "https://mycineflic.vercel.app",
     githubUrl: "https://github.com/oriioll/cineflic",
-    status: "Active dev",
+    status: "Finished",
   },
   {
     titleKey: "projects.financeApp.title",
