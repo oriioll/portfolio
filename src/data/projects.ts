@@ -30,6 +30,33 @@ export const PROJECTS: Project[] = [
     status: "Finished",
   },
   {
+    titleKey: "projects.funWithFlags.title",
+    descKey: "projects.funWithFlags.desc",
+    image: "/mockups/mockupFunwithflags.webp",
+    stack: [
+      {
+        category: "BACKEND",
+        name: "PHP",
+        icon: "/icons/php-full.svg",
+        learning: true,
+      },
+      {
+        category: "BACKEND",
+        name: "SQLite",
+        icon: "/icons/sqlite.svg",
+        learning: false,
+      },
+      {
+        category: "FRONTEND",
+        name: "CSS3",
+        icon: "/icons/css.svg",
+        learning: false,
+      },
+    ],
+    githubUrl: "https://github.com/oriioll/fun-with-flags",
+    status: "Finished",
+  },
+  {
     titleKey: "projects.financeApp.title",
     descKey: "projects.financeApp.desc",
     image: "/mockups/mockupFinanceApp.webp",
@@ -58,28 +85,6 @@ export const PROJECTS: Project[] = [
     status: "Active dev",
   },
   {
-    titleKey: "projects.loomi.title",
-    descKey: "projects.loomi.desc",
-    image: "/mockups/mockupLoomi.webp",
-    stack: [
-      {
-        category: "FRONTEND",
-        name: "Vue.js",
-        icon: "/icons/vue.svg",
-        learning: true,
-      },
-      {
-        category: "FRONTEND",
-        name: "TypeScript",
-        icon: "/icons/ts.svg",
-        learning: true,
-      },
-    ],
-    demoUrl: "https://apploomi.vercel.app",
-    githubUrl: "https://github.com/oriioll/loomi",
-    status: "Active dev",
-  },
-  {
     titleKey: "projects.shorty.title",
     descKey: "projects.shorty.desc",
     image: "/mockups/mockupShorty.webp",
@@ -100,7 +105,29 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://appshorty.vercel.app",
     githubUrl: "https://github.com/oriioll/shorty",
     status: "Finished",
-  },
+  } /*
+  {
+    titleKey: "projects.loomi.title",
+    descKey: "projects.loomi.desc",
+    image: "/mockups/mockupLoomi.webp",
+    stack: [
+      {
+        category: "FRONTEND",
+        name: "Vue.js",
+        icon: "/icons/vue.svg",
+        learning: true,
+      },
+      {
+        category: "FRONTEND",
+        name: "TypeScript",
+        icon: "/icons/ts.svg",
+        learning: true,
+      },
+    ],
+    demoUrl: "https://apploomi.vercel.app",
+    githubUrl: "https://github.com/oriioll/loomi",
+    status: "Active dev",
+  },*/,
   {
     titleKey: "projects.bocaoProject.title",
     descKey: "projects.bocaoProject.desc",
@@ -128,5 +155,5 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://oriioll.github.io/bocao-project/",
     githubUrl: "https://github.com/oriioll/bocao-project",
     status: "Finished",
-  }
+  },
 ];
