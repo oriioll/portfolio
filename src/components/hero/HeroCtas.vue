@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 //Importing i18n objects
 import { useI18n } from 'vue-i18n';
-import{ openLink } from '@/utils/navigation';
+import { openLink } from '@/utils/navigation';
 const { t, locale } = useI18n();
 
 //Handling email copy to clipboard
@@ -55,7 +55,8 @@ const changeSvg = (): void => {
         </svg>
 
         <Transition name="fade" mode="out-in">
-            <a class="openCv" :key="locale" href="/CV_Oriol_Plazas.pdf" target="_blank">{{ t('hero.openCv') }}</a>
+            <a class="openCv" :key="locale" href="/CV_Plazas_Leon_Oriol_DAWe.pdf" target="_blank">{{ t('hero.openCv')
+                }}</a>
         </Transition>
 
         <div class="mail">
@@ -82,7 +83,7 @@ const changeSvg = (): void => {
 .ctas {
     width: 90%;
     max-width: 100%;
-    padding: 0 2rem;          
+    padding: 0 2rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -139,6 +140,7 @@ const changeSvg = (): void => {
     height: 1.25rem;
     animation: all .3s ease;
 }
+
 .mail .cpSvg:hover {
     animation: all .3s ease;
     transform: translateY(0);
@@ -201,7 +203,9 @@ const changeSvg = (): void => {
 
 /* Smaller devices */
 @media (max-width: 550px) {
-    a, p {
+
+    a,
+    p {
         font-size: .8rem;
         font-weight: 600;
     }
@@ -231,7 +235,9 @@ const changeSvg = (): void => {
 
 /* Extra small devices */
 @media (max-width: 380px) {
-    a, p {
+
+    a,
+    p {
         font-size: .7rem;
         font-weight: 600;
     }
