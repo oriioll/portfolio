@@ -24,7 +24,7 @@ export const techStack: TechItem[] = [
     category: "FRONTEND",
     name: "TypeScript",
     icon: "/icons/ts.svg",
-    learning: true,
+    learning: false,
   },
   {
     category: "FRONTEND",
@@ -61,19 +61,19 @@ export const techStack: TechItem[] = [
     category: "BACKEND",
     name: "Node.js",
     icon: "/icons/nodejs.svg",
-    learning: true,
+    learning: false,
   },
   {
     category: "BACKEND",
     name: "Express.js",
     icon: "/icons/expressjs_dark.svg",
-    learning: true,
+    learning: false,
   },
   {
     category: "BACKEND",
     name: "Supabase",
     icon: "/icons/supabase.svg",
-    learning: true,
+    learning: false,
   },
   //TOOLS ITEMS
   {
