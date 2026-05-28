@@ -25,7 +25,8 @@ const techStackFiltered = computed(() => {
                 <div class="txt">
                     {{ tech.name }}
                     <Transition name="fade" mode="out-in">
-                        <span v-if="tech.learning == true" class="learningTag" :key="locale">{{ t('tech.learning') }}</span>
+                        <span v-if="tech.learning == true" class="learningTag" :key="locale">{{ t('tech.learning')
+                            }}</span>
                     </Transition>
 
                 </div>
@@ -38,15 +39,17 @@ const techStackFiltered = computed(() => {
 .frontEnd {
     width: 100%;
     border: solid 1px var(--accent-ui);
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 .title {
     color: var(--accent-ui);
 }
+
 .frontEnd .tech {
     display: flex;
     flex-direction: row;
@@ -54,7 +57,7 @@ const techStackFiltered = computed(() => {
     align-items: center;
     padding: .75rem 2rem;
     border: 1px solid var(--accent-ui);
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: rgba(236, 143, 92, 0.1);
     font-weight: 600;
     color: var(--accent-ui);
@@ -107,16 +110,18 @@ const techStackFiltered = computed(() => {
     /* Brillo suave al logo */
     transition: transform 0.3s ease;
 }
+
 /*Animations for when changing lang */
 .fade-enter-active,
 .fade-leave-active {
-  transition: all .25s ease;
+    transition: all .25s ease;
 }
 
 .fade-enter-from,
 .fade-leave-to {
-  opacity: 0;
+    opacity: 0;
 }
+
 /*MEDIA QUERIES - Responsive*/
 /* Small devices */
 @media (max-width: 1000px) {

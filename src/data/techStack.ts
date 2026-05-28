@@ -48,7 +48,7 @@ export const techStack: TechItem[] = [
   {
     category: "BACKEND",
     name: "PHP",
-    icon: "/icons/php-full.svg",
+    icon: "/icons/php-dark.svg",
     learning: false,
   },
   {

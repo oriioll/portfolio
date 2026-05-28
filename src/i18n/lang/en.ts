@@ -43,6 +43,10 @@ export default {
       title: "Fun with Flags - Flag quiz game with custom API",
       desc: "Web-based flag quiz built with MVC architecture, featuring a DB stored ranking, user accounts, a custom REST API in PHP and an external API integration",
     },
+    kraveEcommerce: {
+      title: "Krave - Full‑Stack eCommerce with REST API and Database",
+      desc: "Full‑stack eCommerce web application with product CRUD, shopping cart, and a custom REST API for client‑server communication.",
+    },
   },
   footer: {
     build: "Built with:",

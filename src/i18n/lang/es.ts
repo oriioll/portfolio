@@ -43,6 +43,10 @@ export default {
       title: "Fun with Flags - Juego de banderas con API propia",
       desc: "Juego web de preguntas sobre banderas desarrollado en arquitectura MVC con ranking en BD, usuarios y API REST propia en PHP junto a API externa",
     },
+    kraveEcommerce: {
+      title: "Krave - eCommerce Full-Stack con API REST y Base de Datos",
+      desc: "Aplicación web eCommerce full‑stack con CRUD de productos, carrito y API REST propia para la comunicación cliente‑servidor.",
+    },
   },
   footer: {
     build: "Hecho con:",

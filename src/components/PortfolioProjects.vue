@@ -17,12 +17,13 @@ import { openLink } from '@/utils/navigation';
     <div class="projects-container">
       <!--Project Cards-->
       <article v-for="project in PROJECTS" class="project">
-        <img class="mockup" :src="project.image" alt="Projectdemo image">
+        <img @click="openLink(project.image)" class="mockup" :src="project.image" alt="Projectdemo image">
         <h5>{{ t(project.titleKey) }}</h5>
         <p>{{ t(project.descKey) }}</p>
         <div class="icons">
           <div class="techs">
-            <img v-for="tech in project.stack" :src="tech.icon" alt="Used in project tech icon" class="techIcon" loading="lazy">
+            <img v-for="tech in project.stack" :src="tech.icon" alt="Used in project tech icon" class="techIcon"
+              loading="lazy">
           </div>
           <div class="url">
             <img v-if="project.demoUrl" @click="openLink(project.demoUrl)" src="/public/icons/link.svg" alt="Demo link">
@@ -63,7 +64,7 @@ import { openLink } from '@/utils/navigation';
   gap: 2rem;
   padding: 1rem;
   border: solid 1px var(--accent-ui);
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .mockup {
@@ -71,7 +72,8 @@ import { openLink } from '@/utils/navigation';
   height: auto;
   aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .project .icons {
@@ -88,7 +90,7 @@ import { openLink } from '@/utils/navigation';
   justify-content: center;
   gap: 1rem;
   border: solid 1px var(--accent-ui);
-  border-radius: 10px;
+  border-radius: 6px;
   padding: .75rem;
 }
 
