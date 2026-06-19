@@ -45,7 +45,7 @@ export default {
     },
     kraveEcommerce: {
       title: "Krave - eCommerce Full-Stack con API REST y Base de Datos",
-      desc: "Aplicación web eCommerce full‑stack con CRUD de productos, carrito y API REST propia para la comunicación cliente‑servidor.",
+      desc: "Aplicación web eCommerce full‑stack con CRUD de usuarios y products, carrito y API REST propia para la comunicación cliente‑servidor.",
     },
   },
   footer: {

@@ -2,6 +2,34 @@ import type Project from "./model/Project.ts";
 
 export const PROJECTS: Project[] = [
   {
+    titleKey: "projects.kraveEcommerce.title",
+    descKey: "projects.kraveEcommerce.desc",
+    image: "/mockups/mockupKraveEcommerce.webp",
+    stack: [
+      {
+        category: "FRONTEND",
+        name: "Vue.js",
+        icon: "/icons/vue.svg",
+        learning: true,
+      },
+      {
+        category: "BACKEND",
+        name: "Node.js",
+        icon: "/icons/nodejs.svg",
+        learning: false,
+      },
+      {
+        category: "FRONTEND",
+        name: "TypeScript",
+        icon: "/icons/ts.svg",
+        learning: false,
+      },
+    ],
+    githubUrl: "https://github.com/oriioll/krave_ecommerce",
+    demoUrl: "https://krave-ecommerce.vercel.app/",
+    status: "Finished",
+  },
+  {
     titleKey: "projects.cineflic.title",
     descKey: "projects.cineflic.desc",
     image: "/mockups/cineflic.webp",
@@ -55,34 +83,6 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: "https://github.com/oriioll/fun-with-flags",
     status: "Finished",
-  },
-  {
-    titleKey: "projects.kraveEcommerce.title",
-    descKey: "projects.kraveEcommerce.desc",
-    image: "/mockups/mockupKraveEcommerce.webp",
-    stack: [
-      {
-        category: "FRONTEND",
-        name: "Vue.js",
-        icon: "/icons/vue.svg",
-        learning: true,
-      },
-      {
-        category: "BACKEND",
-        name: "Node.js",
-        icon: "/icons/nodejs.svg",
-        learning: false,
-      },
-      {
-        category: "FRONTEND",
-        name: "TypeScript",
-        icon: "/icons/ts.svg",
-        learning: false,
-      },
-    ],
-    githubUrl: "https://github.com/oriioll/krave_ecommerce",
-    demoUrl: "https://krave-ecommerce.vercel.app/",
-    status: "Process",
   },
   {
     titleKey: "projects.financeApp.title",

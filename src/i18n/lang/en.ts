@@ -45,7 +45,7 @@ export default {
     },
     kraveEcommerce: {
       title: "Krave - Full‑Stack eCommerce with REST API and Database",
-      desc: "Full‑stack eCommerce web application with product CRUD, shopping cart, and a custom REST API for client‑server communication.",
+      desc: "Full‑stack eCommerce web application with users and products CRUD, shopping cart, and a custom REST API for client‑server communication.",
     },
   },
   footer: {
