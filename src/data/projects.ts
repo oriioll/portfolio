@@ -155,7 +155,7 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://apploomi.vercel.app",
     githubUrl: "https://github.com/oriioll/loomi",
     status: "Active dev",
-  },*/,
+  },,
   {
     titleKey: "projects.bocaoProject.title",
     descKey: "projects.bocaoProject.desc",
@@ -183,5 +183,5 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://oriioll.github.io/bocao-project/",
     githubUrl: "https://github.com/oriioll/bocao-project",
     status: "Finished",
-  },
+  },*/,
 ];
