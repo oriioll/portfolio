@@ -18,7 +18,6 @@ const { t, locale } = useI18n()
     </section>
 </template>
 <style scoped>
-
 .techStack {
     width: 90%;
     max-width: 100%;
@@ -32,6 +31,7 @@ const { t, locale } = useI18n()
     gap: 2rem;
     overflow-x: hidden;
 }
+
 .categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -54,14 +54,12 @@ const { t, locale } = useI18n()
 /* Small devices */
 @media (max-width: 800px) {
     .techStack {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem .25rem;
     }
 }
 
 /* Smaller devices */
-@media (max-width: 550px) {
-    
-}
+@media (max-width: 550px) {}
 
 /* Extra small devices */
 @media (max-width: 380px) {}

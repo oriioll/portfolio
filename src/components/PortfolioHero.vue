@@ -13,7 +13,7 @@ import { scrollDown } from '@/utils/navigation.ts';
     <div class="mainHero">
       <article class="txt">
         <Transition name="fade" mode="out-in">
-          <h1 :key="locale">Oriol Plazas León<span class="codeSymbol">  =&gt; {}</span></h1>
+          <h1 :key="locale">Oriol Plazas León<span class="codeSymbol"> =&gt; {}</span></h1>
         </Transition>
         <Transition name="fade" mode="out-in">
           <h3 :key="locale">{{ t('hero.subtitle') }}</h3>
@@ -93,6 +93,7 @@ import { scrollDown } from '@/utils/navigation.ts';
   font-feature-settings: "liga" 1, "calt" 1;
   text-rendering: optimizeLegibility;
 }
+
 /*Animations for when changing lang */
 .fade-enter-active,
 .fade-leave-active {
@@ -124,13 +125,17 @@ import { scrollDown } from '@/utils/navigation.ts';
   .txt {
     max-width: 100%;
   }
+
+  .hero {
+    gap: .5rem
+  }
 }
 
 /* Smaller devices */
 @media (max-width: 550px) {
   .mainHero {
     gap: 2rem;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem .25rem;
   }
 
   .txt {

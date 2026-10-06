@@ -6,7 +6,7 @@ const { t, locale } = useI18n();
 
 </script>
 <template>
-  <nav>
+  <nav id="nav">
     <ul>
       <li>
         <Transition name="fade" mode="out-in">
@@ -28,7 +28,7 @@ const { t, locale } = useI18n();
 
       <li>
         <Transition name="fade" mode="out-in">
-          <a href="#stack" :key="locale" id="cta" >{{ t('nav.stack') }}</a>
+          <a href="#stack" :key="locale" id="cta">{{ t('nav.stack') }}</a>
         </Transition>
       </li>
     </ul>
@@ -38,6 +38,7 @@ const { t, locale } = useI18n();
 * {
   scroll-behavior: smooth;
 }
+
 nav {
   scroll-behavior: smooth;
   height: auto;

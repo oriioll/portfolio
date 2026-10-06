@@ -56,7 +56,7 @@ const changeSvg = (): void => {
 
         <Transition name="fade" mode="out-in">
             <a class="openCv" :key="locale" href="/CV_Plazas_Leon_Oriol_DAWe.pdf" target="_blank">{{ t('hero.openCv')
-            }}</a>
+                }}</a>
         </Transition>
 
         <div class="mail">
@@ -84,7 +84,6 @@ const changeSvg = (): void => {
     width: 90%;
     max-width: 100%;
     padding: 0 2rem;
-    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -109,7 +108,7 @@ const changeSvg = (): void => {
     text-decoration: none;
     padding: .8rem 1.5rem;
     border: solid 1px var(--accent-ui);
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: rgba(236, 143, 92, 0.1);
     font-weight: bold;
     color: var(--accent-ui);
@@ -128,7 +127,7 @@ const changeSvg = (): void => {
     justify-content: center;
     gap: .75rem;
     border: solid 1px var(--accent-ui);
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: rgba(236, 143, 92, 0.1);
     padding: .8rem 1.5rem;
     color: var(--accent-ui);
@@ -206,7 +205,7 @@ const changeSvg = (): void => {
 
     a,
     p {
-        font-size: .8rem;
+        font-size: 1rem;
         font-weight: 600;
     }
 
@@ -216,20 +215,20 @@ const changeSvg = (): void => {
     }
 
     .ctas svg {
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.3rem;
+        height: 1.3rem;
     }
 
     .openCv,
     .mail {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
     }
 
     .mail .cpSvg,
     .mail .successSvg {
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 1rem;
+        height: 1rem;
     }
 }
 

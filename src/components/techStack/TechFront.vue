@@ -55,7 +55,7 @@ const techStackFiltered = computed(() => {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: .75rem 2rem;
+    padding: .75rem 1rem;
     border: 1px solid var(--accent-ui);
     border-radius: 6px;
     background-color: rgba(236, 143, 92, 0.1);

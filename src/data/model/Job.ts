@@ -1,6 +1,6 @@
 /**
  * Interface class to define every job object
- * @property {string} company - The name of the company 
+ * @property {string} company - The name of the company
  * @property {string} role - The role of the job
  * @property {string} desc - A short description of the job
  * @property {Date} hireDate - The date of hiring
@@ -9,9 +9,9 @@
  * @since 03/03/26
  */
 export default interface Job {
-    company: string;
-    roleKey: string;
-    descKey: string;
-    hireDate: Date;
-    endDate: Date;
+  company: string;
+  roleKey: string;
+  descKey: string;
+  hireDate: Date;
+  endDate: Date | string;
 }

@@ -62,7 +62,7 @@ footer .built {
 /* Smaller devices */
 @media (max-width: 550px) {
     header {
-        gap: .3rem;
+        gap: .25rem;
         padding: 1rem 0.25rem;
     }
 }

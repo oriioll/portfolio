@@ -32,24 +32,51 @@
     /*Font Sizes  - https://typescale.com  - Major Secpnd (https://gemini.google.com)*/
     --step--2: clamp(0.6rem, 0.58rem + 0.08vw, 0.7rem);
     --step--1: clamp(0.7rem, 0.68rem + 0.1vw, 0.85rem);
-    --step-0: clamp(0.8rem, 0.75rem + 0.25vw, 1.05rem);  
+    --step-0: clamp(0.8rem, 0.75rem + 0.25vw, 1.05rem);
     --step-1: clamp(1rem, 0.95rem + 0.25vw, 1.2rem);
-    --step-2: clamp(1.15rem, 1.08rem + 0.35vw, 1.45rem); /* h5 */
-    --step-3: clamp(1.3rem, 1.2rem + 0.5vw, 1.7rem);    /* h4 */
-    --step-4: clamp(1.5rem, 1.35rem + 0.75vw, 2.1rem);  /* h2-h3 */
-    --step-5: clamp(1.75rem, 1.55rem + 1vw, 2.45rem);   /* h1 */
+    --step-2: clamp(1.15rem, 1.08rem + 0.35vw, 1.45rem);
+    /* h5 */
+    --step-3: clamp(1.3rem, 1.2rem + 0.5vw, 1.7rem);
+    /* h4 */
+    --step-4: clamp(1.5rem, 1.35rem + 0.75vw, 2.1rem);
+    /* h2-h3 */
+    --step-5: clamp(1.75rem, 1.25rem + 2vw, 2.45rem);
+    /* h1 */
 }
 
-h1 { font-size: var(--step-5); letter-spacing: -0.02em; line-height: 1.1; }
-h2 { font-size: var(--step-4); letter-spacing: -0.01em; line-height: 1.2; }
-h3 { font-size: var(--step-3); line-height: 1.2; }
-h4 { font-size: var(--step-2); }
-h5 { font-size: var(--step-1); }
-h6 { font-size: var(--step-0); }
-p  { 
-    font-size: var(--step-0); 
-    line-height: 1.5;           
-    letter-spacing: -0.01em;    
+h1 {
+    font-size: var(--step-5);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: var(--step-4);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: var(--step-3);
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: var(--step-2);
+}
+
+h5 {
+    font-size: var(--step-1);
+}
+
+h6 {
+    font-size: var(--step-0);
+}
+
+p {
+    font-size: var(--step-0);
+    line-height: 1.5;
+    letter-spacing: -0.01em;
 }
 
 
@@ -79,6 +106,7 @@ section {
 
 /* Disable hovers on touch devices */
 @media (hover: none) {
+
     a:hover,
     button:hover,
     input:hover,

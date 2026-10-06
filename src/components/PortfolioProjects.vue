@@ -127,7 +127,7 @@ import { openLink } from '@/utils/navigation';
 /* Small devices */
 @media (max-width: 800px) {
   .projects {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem .25rem;
   }
 
   .project {
