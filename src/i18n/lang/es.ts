@@ -14,6 +14,10 @@ export default {
     learning: "Aprendiendo",
   },
   experience: {
+    current: "Actualmente",
+    inovumRole: "Desarrollador Full-Stack en prácticas",
+    inovumDesc:
+      "Desarrollo full-stack en una plataforma IoT con Angular, TypeScript y Java, y mantenimiento de CMS de clientes con sus bases de datos, en entornos dockerizados.",
     lectaRole: "Técnico informático en prácticas",
     lectaDesc:
       "Soporte técnico en las oficinas centrales, gestionando la infraestructura de usuario final maquetando equipos y asegurando la continuidad operativa de los departamentos con programes de Ticketing.",
@@ -46,6 +50,10 @@ export default {
     kraveEcommerce: {
       title: "Krave - eCommerce Full-Stack con API REST y Base de Datos",
       desc: "Aplicación web eCommerce full‑stack con CRUD de usuarios y products, carrito y API REST propia para la comunicación cliente‑servidor.",
+    },
+    autotracker: {
+      title: "AutoTracker - Seguimiento de pedidos desde Gmail con IA",
+      desc: "Aplicación web que lee tu Gmail, detecta pedidos con IA y centraliza tienda, precio, transportista y seguimiento en un solo panel.",
     },
   },
   footer: {

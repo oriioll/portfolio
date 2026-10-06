@@ -14,6 +14,10 @@ export default {
     learning: "Learning",
   },
   experience: {
+    current: "Now",
+    inovumRole: "Full-Stack Developer Trainee",
+    inovumDesc:
+      "Full-stack development on an IoT platform with Angular and Java, and maintenance of client CMSs and their databases, in Dockerized environments.",
     lectaRole: "IT Systems Trainee",
     lectaDesc:
       "IT support at central headquarters, managing the end-user infrastructure, provisioning workstations and handling the operational continuity for all the departments using Ticketing software.",
@@ -46,6 +50,10 @@ export default {
     kraveEcommerce: {
       title: "Krave - Full‑Stack eCommerce with REST API and Database",
       desc: "Full‑stack eCommerce web application with users and products CRUD, shopping cart, and a custom REST API for client‑server communication.",
+    },
+    autotracker: {
+      title: "AutoTracker - Gmail order tracking powered by AI",
+      desc: "Web app that reads your Gmail, detects orders with AI and centralizes merchant, price, carrier and tracking in a single dashboard.",
     },
   },
   footer: {
