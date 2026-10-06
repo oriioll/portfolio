@@ -2,6 +2,40 @@ import type Project from "./model/Project.ts";
 
 export const PROJECTS: Project[] = [
   {
+    titleKey: "projects.autotracker.title",
+    descKey: "projects.autotracker.desc",
+    image: "/mockups/mockupAutotracker.webp",
+    stack: [
+      {
+        category: "FRONTEND",
+        name: "Vue.js",
+        icon: "/icons/vue.svg",
+        learning: false,
+      },
+      {
+        category: "FRONTEND",
+        name: "TypeScript",
+        icon: "/icons/ts.svg",
+        learning: false,
+      },
+      {
+        category: "BACKEND",
+        name: "Supabase",
+        icon: "/icons/supabase.svg",
+        learning: false,
+      },
+      {
+        category: "TOOLS",
+        name: "Gemini",
+        icon: "/icons/gemini.svg",
+        learning: false,
+      },
+    ],
+    githubUrl: "https://github.com/oriioll/autotracker",
+    demoUrl: "https://app-autotracker.vercel.app/",
+    status: "Finished",
+  },
+  {
     titleKey: "projects.kraveEcommerce.title",
     descKey: "projects.kraveEcommerce.desc",
     image: "/mockups/mockupKraveEcommerce.webp",
@@ -84,6 +118,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/oriioll/fun-with-flags",
     status: "Finished",
   },
+  /** 
   {
     titleKey: "projects.financeApp.title",
     descKey: "projects.financeApp.desc",
@@ -111,7 +146,7 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://appfinance-alpha.vercel.app/",
     githubUrl: "https://github.com/oriioll/financeApp",
     status: "Active dev",
-  },
+  },*/
   {
     titleKey: "projects.shorty.title",
     descKey: "projects.shorty.desc",
