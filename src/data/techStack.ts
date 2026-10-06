@@ -4,6 +4,24 @@ export const techStack: TechItem[] = [
   //FRONTEND ITEMS
   {
     category: "FRONTEND",
+    name: "Vue.js",
+    icon: "/icons/vue.svg",
+    learning: false,
+  },
+  {
+    category: "FRONTEND",
+    name: "TypeScript",
+    icon: "/icons/ts.svg",
+    learning: false,
+  },
+  {
+    category: "FRONTEND",
+    name: "JavaScript",
+    icon: "/icons/js.svg",
+    learning: false,
+  },
+  {
+    category: "FRONTEND",
     name: "HTML5",
     icon: "/icons/html.svg",
     learning: false,
@@ -16,35 +34,11 @@ export const techStack: TechItem[] = [
   },
   {
     category: "FRONTEND",
-    name: "JavaScript",
-    icon: "/icons/js.svg",
-    learning: false,
-  },
-  {
-    category: "FRONTEND",
-    name: "TypeScript",
-    icon: "/icons/ts.svg",
-    learning: false,
-  },
-  {
-    category: "FRONTEND",
-    name: "Vue.js",
-    icon: "/icons/vue.svg",
+    name: "Angular",
+    icon: "/icons/angular.svg",
     learning: true,
   },
   //BACKEND ITEMS
-  {
-    category: "BACKEND",
-    name: "Kotlin",
-    icon: "/icons/kotlin.svg",
-    learning: false,
-  },
-  {
-    category: "BACKEND",
-    name: "PostgreSQL",
-    icon: "/icons/postgresql.svg",
-    learning: false,
-  },
   {
     category: "BACKEND",
     name: "PHP",
@@ -53,8 +47,8 @@ export const techStack: TechItem[] = [
   },
   {
     category: "BACKEND",
-    name: "SQLite",
-    icon: "/icons/sqlite.svg",
+    name: "Kotlin",
+    icon: "/icons/kotlin.svg",
     learning: false,
   },
   {
@@ -65,15 +59,40 @@ export const techStack: TechItem[] = [
   },
   {
     category: "BACKEND",
+    name: "PostgreSQL",
+    icon: "/icons/postgresql.svg",
+    learning: false,
+  },
+  {
+    category: "BACKEND",
+    name: "MongoDB",
+    icon: "/icons/mongo.svg",
+    learning: false,
+  },
+  {
+    category: "BACKEND",
     name: "Express.js",
     icon: "/icons/expressjs_dark.svg",
     learning: false,
   },
+
   {
     category: "BACKEND",
     name: "Supabase",
     icon: "/icons/supabase.svg",
     learning: false,
+  },
+  {
+    category: "BACKEND",
+    name: "SQLite",
+    icon: "/icons/sqlite.svg",
+    learning: false,
+  },
+  {
+    category: "BACKEND",
+    name: "Laravel",
+    icon: "/icons/laravel.svg",
+    learning: true,
   },
   //TOOLS ITEMS
   {
@@ -90,14 +109,26 @@ export const techStack: TechItem[] = [
   },
   {
     category: "TOOLS",
+    name: "Docker",
+    icon: "/icons/docker.svg",
+    learning: true,
+  },
+  {
+    category: "TOOLS",
     name: "Vercel",
     icon: "/icons/vercelight.svg",
     learning: false,
   },
   {
     category: "TOOLS",
-    name: "Docker",
-    icon: "/icons/docker.svg",
-    learning: true,
+    name: "Gemini integration",
+    icon: "/icons/gemini.svg",
+    learning: false,
+  },
+  {
+    category: "TOOLS",
+    name: "Claude integration",
+    icon: "/icons/claude.svg",
+    learning: false,
   },
 ];
