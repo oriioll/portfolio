@@ -1,4 +1,4 @@
-import type Job from './model/Job';
+import type Job from "./model/Job";
 
 /**
  * Object array with Job type object
@@ -7,11 +7,18 @@ import type Job from './model/Job';
  * @see Job Interface class
  */
 export const EXPERIENCE: Job[] = [
-    {
-        company: "Lecta",
-        roleKey: "experience.lectaRole", 
-        descKey: "experience.lectaDesc",
-        hireDate: new Date("2024-10-01"), 
-        endDate: new Date("2025-03-07")
-    }
-]
+  {
+    company: "Lecta",
+    roleKey: "experience.lectaRole",
+    descKey: "experience.lectaDesc",
+    hireDate: new Date("2024-10-01"),
+    endDate: new Date("2025-03-07"),
+  },
+  {
+    company: "Inovum Solutions",
+    roleKey: "experience.inovumRole",
+    descKey: "experience.inovumDesc",
+    hireDate: new Date("2026-07-01"),
+    endDate: "Now",
+  },
+];

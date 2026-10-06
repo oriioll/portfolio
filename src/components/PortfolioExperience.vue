@@ -5,6 +5,10 @@ const { t, locale } = useI18n()
 
 //Import experience object array
 import { EXPERIENCE } from '@/data/experience';
+import { computed } from 'vue';
+const sortedExperience = computed(() => {
+    return EXPERIENCE.sort((a, b) => b.hireDate.getTime() - a.hireDate.getTime());
+})
 </script>
 <template>
     <section class="experience" id="experience">
@@ -13,11 +17,14 @@ import { EXPERIENCE } from '@/data/experience';
         </Transition>
         <div class="jobs">
             <!--Job Cards-->
-            <article v-for="job in EXPERIENCE" class="job">
+            <article v-for="job in sortedExperience" class="job">
                 <div class="top">
                     <h4 class="role">{{ t(job.roleKey) }}</h4>
-                    <p class="date">{{ job.hireDate.toLocaleDateString("es-Es", { month: "2-digit", year: "numeric" }) }}
-                        - {{ job.endDate.toLocaleDateString("es-Es", { month: "2-digit", year: "numeric" }) }}</p>
+                    <p class="date">{{ job.hireDate.toLocaleDateString("es-Es", { month: "2-digit", year: "numeric" })
+                    }}
+                        - {{ job.endDate instanceof Date
+                            ? job.endDate.toLocaleDateString("es-ES", { month: "2-digit", year: "numeric" })
+                            : t('experience.current') }}</p>
                 </div>
                 <h5 class="company">{{ job.company }}</h5>
                 <p class="desc">{{ t(job.descKey) }}</p>
@@ -43,7 +50,7 @@ import { EXPERIENCE } from '@/data/experience';
 .experience .jobs {
     align-self: center;
     padding-right: 1rem;
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,6 +59,7 @@ import { EXPERIENCE } from '@/data/experience';
     gap: .25rem;
     border-left: 2px solid var(--accent-ui);
 }
+
 .job {
     padding-bottom: 2.5rem;
     display: flex;
@@ -97,7 +105,7 @@ import { EXPERIENCE } from '@/data/experience';
 /* Small devices */
 @media (max-width: 800px) {
     .experience {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem .25rem;
     }
 
     .experience .jobs {
