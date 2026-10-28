@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type Project from '@/data/model/Project';
+import ProjectDialog from './projects/ProjectDialog.vue';
 //Importing i18n objects
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
@@ -8,6 +10,20 @@ import { PROJECTS } from '@/data/projects.ts';
 
 //Import util function
 import { openLink } from '@/utils/navigation';
+import { ref } from 'vue';
+
+
+//Handle project dialog
+const isProjectOpen = ref(false)
+const projectClicked = ref<Project>()
+const openCard = (p: Project) => {
+  projectClicked.value = p;
+  isProjectOpen.value = true;
+}
+
+const closeCard = () => {
+  isProjectOpen.value = false;
+}
 </script>
 <template>
   <section class="projects" id="projects">
@@ -16,8 +32,8 @@ import { openLink } from '@/utils/navigation';
     </Transition>
     <div class="projects-container">
       <!--Project Cards-->
-      <article v-for="project in PROJECTS" class="project">
-        <img @click="openLink(project.image)" class="mockup" :src="project.image" alt="Projectdemo image">
+      <article v-for="project in PROJECTS" class="project" @click="openCard(project)">
+        <img @click.stop="openLink(project.image)" class="mockup" :src="project.image" alt="Projectdemo image">
         <h5>{{ t(project.titleKey) }}</h5>
         <p>{{ t(project.descKey) }}</p>
         <div class="icons">
@@ -26,15 +42,47 @@ import { openLink } from '@/utils/navigation';
               loading="lazy">
           </div>
           <div class="url">
-            <img v-if="project.demoUrl" @click="openLink(project.demoUrl)" src="/public/icons/link.svg" alt="Demo link">
-            <img @click="openLink(project.githubUrl)" src="/public/icons/githublight.svg" alt="Github Repo Link">
+            <img v-if="project.demoUrl" @click.stop="openLink(project.demoUrl)" src="/public/icons/link.svg" alt="Demo link">
+            <img @click.stop="openLink(project.githubUrl)" src="/public/icons/githublight.svg" alt="Github Repo Link">
           </div>
         </div>
       </article>
     </div>
   </section>
+  <Transition name="popup">
+    <ProjectDialog v-if="isProjectOpen" :project="projectClicked!" @close-project="closeCard" />
+  </Transition>
 </template>
 <style scoped>
+:global(.popup-enter-active),
+:global(.popup-leave-active) {
+  transition: opacity .22s ease;
+}
+
+:global(.popup-enter-active .project-dialog),
+:global(.popup-leave-active .project-dialog) {
+  transition: transform .22s cubic-bezier(.2, .75, .3, 1);
+}
+
+:global(.popup-enter-from),
+:global(.popup-leave-to) {
+  opacity: 0;
+}
+
+:global(.popup-enter-from .project-dialog),
+:global(.popup-leave-to .project-dialog) {
+  transform: translateY(8px) scale(.985);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.popup-enter-active),
+  :global(.popup-leave-active),
+  :global(.popup-enter-active .project-dialog),
+  :global(.popup-leave-active .project-dialog) {
+    transition-duration: .01ms;
+  }
+}
+
 .projects {
   width: 90%;
   max-width: 100%;
@@ -52,7 +100,7 @@ import { openLink } from '@/utils/navigation';
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 }
 
@@ -65,6 +113,12 @@ import { openLink } from '@/utils/navigation';
   padding: 1rem;
   border: solid 1px var(--accent-ui);
   border-radius: 6px;
+  transition: all .2s ease;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
 }
 
 .mockup {
