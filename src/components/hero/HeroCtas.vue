@@ -55,7 +55,7 @@ const changeSvg = (): void => {
         </svg>
 
         <Transition name="fade" mode="out-in">
-            <a class="openCv" :key="locale" href="/CV_Plazas_Leon_Oriol_DAWe.pdf" target="_blank">{{ t('hero.openCv')
+            <a class="openCv" :key="locale" href="/CV_Oriol_Plazas_Leon.pdf" target="_blank">{{ t('hero.openCv')
                 }}</a>
         </Transition>
 

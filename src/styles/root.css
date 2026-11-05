@@ -21,6 +21,7 @@
     --accent-ui: #ec8f5c;
     --accent-ui-hover: #ff9f6d;
     --accent-ui-rgba: rgba(236, 143, 92, 0.1);
+    --selection: rgba(236, 142, 92, 0.281);
     --accent-learning-rgba: rgba(160, 160, 160, 0.12);
     --accent-learning2-rgba: rgba(255, 255, 255, 0.06);
     --accent-ui-low: #c97546;
@@ -102,6 +103,10 @@ html {
 /*Scroll margin top to make navbar work better and see the titles correctly without the sticky header eating it*/
 section {
     scroll-margin-top: 100px;
+}
+
+::selection {
+    background-color: var(--selection);
 }
 
 /* Disable hovers on touch devices */
